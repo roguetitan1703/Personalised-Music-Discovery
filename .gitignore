@@ -1,5 +1,8 @@
 # Local files
 .vscode
+
+# Cache files
+src/helpers_/__pycache__/
+
 # Data files
-src/data/Spotify_
-src/data/logs
+src/data/logs/
