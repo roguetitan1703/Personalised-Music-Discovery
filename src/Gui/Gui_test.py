@@ -1,17 +1,53 @@
+# Importing gui
 from tkinter import *
 from tkinter.ttk import *
 from tkinter import IntVar
 
+# Importing other modules
+import os, sys
+from urllib.parse import urlencode
 
-# get the music
-def get_music():
-    print('Genre: ',genre.get())
-    print('Acousticness: ',acousticness.get())
-    print('Danceability: ',danceability.get())
-    print('Instrumentalness: ',instrumentalness.get())
-    print('Energy: ',energy.get())
-    print('Number of Songs: ',number_of_songs.get())
-    
+# Adding the project's root directory to the path
+project_root = os.getcwd()
+sys.path.append(f'{project_root}/data')
+sys.path.append(f'{project_root}/src')
+
+# Import local modules
+from Spotify_.SpotifyAPI import SpotifyAPIGetRecommendations, SpotifyAPIHelper
+
+# Get the recommendation tracks with the SpotifyAPIGetRecommendations method get_recommendations_spotify
+def get_recommendation_tracks():
+      
+      # Creating a parameters dictionary to manage high number of params passing into the function
+      parameters = {
+            'limit': limit.get(),
+            'seed_genres': genre.get().lower(),
+            # 'seed_artist': '',
+            # 'seed_tracks': '',
+            'target_acousticness' : acousticness.get(),
+            'target_danceability' : danceability.get(),
+            'target_instrumentalness' : instrumentalness.get(),
+            'target_energy' : energy.get()
+            }
+      
+      # Getting the playlist from the get_recommendation_spotify method
+      playlist = SpotifyAPIGetRecommendations.get_recommendations_spotify(parameters=parameters)
+      
+      print('Genre: ',genre.get())
+      print('Acousticness: ',acousticness.get())
+      print('Danceability: ',danceability.get())
+      print('Instrumentalness: ',instrumentalness.get())
+      print('Energy: ',energy.get())
+      print('Number of Songs: ',limit.get())
+      print('\n')
+      
+      # Printing Playlist
+      ctr = 0
+      for track in playlist:
+            ctr += 1
+            artists_name = ', '.join([artist['artist_name'] for artist in track['artists']])
+            print(f"{ctr}. {track['track_name']} by {artists_name}")
+            
 
 
 # Creating a root windiow
@@ -129,14 +165,14 @@ Label(root, text='Select number of songs:',
       font=('Helvetica', 10)).grid(row=6,column=0)
 
 # Creating the number of songs spinbox 
-number_of_songs = IntVar()
-nos = Spinbox(root, from_=0, to=20, textvariable=number_of_songs)
+limit = IntVar()
+nos = Spinbox(root, from_=0, to=20, textvariable=limit)
 nos['state'] = 'readonly'
 nos.grid(row=6, column=1)
 
 # Creating a search button
 
-discover_music  = Button(root, text='Discover', command= get_music, width=10)
+discover_music  = Button(root, text='Discover', command= get_recommendation_tracks, width=10)
 discover_music.grid(row=7,columnspan=2)
 
 

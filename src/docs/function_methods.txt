@@ -1,0 +1,14 @@
+@classmethod
+Use class methods when a function needs access to the class itself (its attributes and methods) but not to instance-specific data.
+They can be called directly from the class and do not need an instance
+In summary the class method use case is:
+    1. When the function needs to access only the class methods and attributes which are not changing in instances.
+    2. Need to be called directly from the class name and no creation of an instance is intended.
+
+@staticmethod
+Use static methods when a function doesn't depend on instance-specific data and doesn't need access to the class itself.
+Static methods are often used for utility functions that are related to the class but don't modify its state.    
+In summary the static method use case is:
+    1. Functions that don't need access to any specific context within the class.
+    2. For utility functions that are related to the class in some way but don't require instance-specific information.
+    These functions can be called directly from the class and don't need an instance to be created.

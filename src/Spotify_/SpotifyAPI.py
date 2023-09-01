@@ -32,9 +32,9 @@ load_dotenv(env_file)
 client_id = os.getenv('CLIENT_ID')
 client_secret = os.getenv('CLIENT_SECRET')  
 redirect_uri = os.getenv('REDIRECT_URI')
-auth_code_url = os.getenv('GET_AUTHORIZATION_CODE_URL')
+get_auth_code_url = os.getenv('GET_AUTHORIZATION_CODE_URL')
 auth_code = os.getenv('AUTHORIZATION_CODE')
-access_token_url = os.getenv('GET_ACCESS_TOKEN_URL')
+get_access_token_url = os.getenv('GET_ACCESS_TOKEN_URL')
 
 # Tokens
 refresh_token = os.getenv('REFRESH_TOKEN')
@@ -45,7 +45,7 @@ access_scopes = read_file(f'{spotify_data_path}/modify_scopes.json')
 scope = ' '.join(access_scopes['MODIFY_PLAYBACK_LISTENING_PLUS'])
 
 # Urls for getting data from Spotify API
-recommendations_url = os.getenv('GET_RECOMMENDATIONS_URL')
+get_recommendations_url = os.getenv('GET_RECOMMENDATIONS_URL')
 
 # Implenting a logger function for seperate module logging
 class Logger:
@@ -96,6 +96,7 @@ class Logger:
         # Set the formatter to the color_formatter for the file handler
         file_handler.setFormatter(self.color_formatter)
     
+    
     # Function to setup the console handler which will log to the console, and will be usef for immediate feedback during development
     def setup_console_handler(self):
         console_handler = logging.StreamHandler()
@@ -129,6 +130,7 @@ class Logger:
             # Check for the console handler and set its level to DEBUG to allow all logs to log through console 
             self.handlers['console_handler'].setLevel(logging.DEBUG)    
     
+    
     # Disable console logging if it was enabled previously or default
     def disable_console_logging(self):
         self.log_to_console = False
@@ -147,6 +149,7 @@ class Logger:
                 # Remove the handler from the logger permanently
                 self.logger.removeHandler(handler_)
                 break
+            
             
     # Custom log message function which logs the message through all the handlers, It then depends on the handler's level if the log message will pass through
     def log_message(self, log_level, message):
@@ -175,19 +178,21 @@ class Logger:
                 line = line.strip()  # To remove any leading/trailing whitespace
                 print(line)
 
+
     # Clear log file in case of unwanted log statements filling up the log file
     def clear_log_file(self):
         with open(self.log_file, 'w') as file:
             # Opening the file in 'w' mode truncates it, effectively clearing its contents.
             pass
 
+# Initializing logger
+logger = Logger('SpotifyAPI', f'{log_data_path}SpotifyAPI.log', log_to_console=False, debug_mode=False)
 
 # The Spotify API Helper to manage tokens and authorization seemlessly
 class SpotifyAPIHelper:
-    
     # A local server to catch the OAuth2 redirection when retrieving the auth token
-    # Defining classmethod as the function does not depend on the instance bound values
     # Using keyword cls is just a measure to differentiate self from cls, any keyword can be used  
+    # Refer to documentation for @classmethod usecase
     @classmethod
     def start_local_server(cls):
         global auth_code
@@ -341,7 +346,7 @@ class SpotifyAPIHelper:
     # To get the authorization code by opening the browser and redirecting the user to the spotify authorization page
     @classmethod
     def get_authorization_code(cls):
-        url = auth_code_url
+        url = get_auth_code_url
         headers = {
             'client_id': client_id,
             'response_type': 'code',
@@ -357,7 +362,7 @@ class SpotifyAPIHelper:
     @classmethod
     def get_access_and_refresh_tokens(cls):
         response = requests.post(
-            access_token_url,
+            get_access_token_url,
             data={
                 'code': auth_code,
                 'redirect_uri': redirect_uri,
@@ -392,7 +397,7 @@ class SpotifyAPIHelper:
     @classmethod
     def refresh_access_token(cls):
         response = requests.post(
-            access_token_url,
+            get_access_token_url,
             data={
                 'grant_type': 'refresh_token',
                 'refresh_token': refresh_token
@@ -446,11 +451,99 @@ class SpotifyAPIHelper:
         else:
             return os.getenv(key)
 
+
+# The Spotify API Get recommendations to get the songs according to the user
+class SpotifyAPIGetRecommendations:
+    
+    # Refer to documentation for @staticmethod usecase  
+    
+    # To get the recommendations (in form of tracks) from the spotify api
+    
+        # params = {
+    #     'limit': int,
+    #     'seed_genres': list,
+    #     'seed_artist': list,
+    #     'seed_tracks': list,
+    #     'target_acousticness' : float,
+    #     'target_danceability' : float,
+    #     'target_instrumentalness' : float,
+    #     'target_energy' : float,
+    # }
+    
+    # @param access_token: The access token to be used to get the playlists
+    # @param limit: The number of songs to be returned
+    # @param seed_genres: The list of genres to be used as a seed
+    # @param seed_artist: The list of artists to be used as a seed
+    # @param seed_tracks: The list of tracks to be used as a seed
+    # @param target_acousticness: The target acousticness to be used as a filter
+    # @param target_danceability: The target danceability to be used as a filter
+    # @param target_instrumentalness: The target instrumentalness to be used as a filter
+    # @param target_energy: The target energy to be used as a filter
+    
+    # Note: Total sum of number of seed_genres, seed_artist and seed_tracks should not be greater than 5  
+    
+    # @return: The array of tracks to be returned
+    
+    @staticmethod         
+    def get_recommendations_spotify(parameters,access_token=SpotifyAPIHelper.get('ACCESS_TOKEN')): 
+        # Sending a get request to get tracks
+        response = requests.get(
+            get_recommendations_url,
+            headers={
+                'Authorization': f'Bearer {access_token}' 
+            }, 
+            params={
+                'limit': parameters['limit'],
+                'seed_genres': parameters['seed_genres'],
+                # 'seed_artist': parameters['seed_artist'],
+                # 'seed_tracks': parameters['seed_tracks'],
+                'target_acousticness' : parameters['target_acousticness'],
+                'target_danceability' : parameters['target_danceability'],
+                'target_instrumentalness' : parameters['target_instrumentalness'],
+                'target_energy' : parameters['target_energy']
+            }
+        )
+        
+        # If the status_code is 200, means the method was successful
+        if response.status_code == 200:
+            logger.log_message('info', f'{"From " + SpotifyAPIGetRecommendations.get_recommendations_spotify.__name__} :Successfully retrieved recommendations playlists')
+            json_resp = response.json()
+            # Retrieving tracks from the json response
+            playlist = []
+            
+            for track in json_resp['tracks']:
+                track = {
+                    'track_name': track['name'],
+                    'track_id': track['id'],
+                    'track_populalrity': track['popularity'],
+                    'artists': [{'artist_name' : artist['name'], 'artist_id': artist['id']} for artist in track['artists']]                
+                }
+                playlist.append(track)
+            
+            # Returning the array of tracks
+            return playlist
+             
+        # If the status_code is 401, means bad or expired access token
+        elif response.status_code == 401:
+            # Invalid access token
+            json_resp = response.json()
+            logger.log_message('error', f'{"From " + SpotifyAPIGetRecommendations.get_recommendations_spotify.__name__} : {json_resp["error"]["message"]}')
+            
+            # Return an empty array
+            return []
+        
+        # If the status_code is not 200 or 401, means unexpected error
+        else:
+            json_resp = response.json()
+            logger.log_message('error', f'{"From " + SpotifyAPIGetRecommendations.get_recommendations_spotify.__name__} : Status code: {response.status_code} Error: {json_resp["error"]["message"]}')            
+            
+            # Return an empty array
+            return []
+        
+        
 if __name__ == '__main__':
-    logger = Logger('SpotifyAPI', f'{log_data_path}SpotifyAPI.log', log_to_console=False, debug_mode=False)
+    # logger = Logger('SpotifyAPI', f'{log_data_path}SpotifyAPI.log', log_to_console=False, debug_mode=False)
     SAH = SpotifyAPIHelper
     # print(SAH.get('ACCESS_TOKEN'))
     # print(SAH.get('REFRESH_TOKEN'))
     # print(SAH.get('AUTHORIZATION_CODE'))
-    
-    
