@@ -5,7 +5,7 @@ and dumping data into json files into a single call method.
 
 import json, os, sys
 project_root = os.getcwd()
-sys.path.append(f'{project_root}/data')
+sys.path.append(f'{project_root}/src/data')
 
 # Dumps data into a json file
 def dump_file(file, dump_this):

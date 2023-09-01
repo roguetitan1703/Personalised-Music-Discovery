@@ -1,4 +1,5 @@
 # Local files
 .vscode
 # Data files
-src/data/.env
+src/data/Spotify_
+src/data/logs
