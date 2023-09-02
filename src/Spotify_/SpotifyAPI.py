@@ -676,7 +676,8 @@ class SpotifyAPIUtility:
             # Returning the playlist id
             return {
                 'playlist_id': json_resp['id'],
-                'playlist_url': json_resp['external_urls']['spotify']
+                'playlist_url': json_resp['external_urls']['spotify'],
+                'playlist_uri': json_resp['uri']
             }
         
         # If the status code is 401, means bad or expired access token
@@ -754,6 +755,7 @@ class SpotifyAPIUtility:
         if created_playlist['playlist_id']:
             parameters['playlist_id'] = created_playlist['playlist_id']
             parameters['playlist_url'] = created_playlist['playlist_url']
+            parameters['playlist_uri'] = created_playlist['playlist_uri']
 
             # Then add the items to the playlist
             parameters['snapshot_id'] = cls.add_items_to_spotify_playlist(parameters['playlist_id'], parameters['track_uris'])
@@ -765,6 +767,7 @@ class SpotifyAPIUtility:
                 return {
                     'playlist_id': parameters['playlist_id'],
                     'playlist_url': parameters['playlist_url'],
+                    'playlist_uri': parameters['playlist_uri'],
                     'snapshot_id': parameters['snapshot_id'],
                     'is_playlist_created': True,
                 }
