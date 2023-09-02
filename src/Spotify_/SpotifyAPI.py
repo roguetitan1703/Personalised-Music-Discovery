@@ -4,7 +4,7 @@ import base64, json
 from urllib.parse import urlencode
 
 # Importing modules for paths and environment file
-import os, sys
+import os, sys, time
 from dotenv import load_dotenv, set_key
 
 # Importing logging module
@@ -39,14 +39,23 @@ get_access_token_url = os.getenv('GET_ACCESS_TOKEN_URL')
 # Tokens
 refresh_token = os.getenv('REFRESH_TOKEN')
 access_token = os.getenv('ACCESS_TOKEN')
+expires_in = 0
 
 # Access scopes for modifying user's data or reading it 
 access_scopes = read_file(f'{spotify_data_path}/modify_scopes.json')
-scope = ' '.join(access_scopes['MODIFY_PLAYBACK_LISTENING_PLUS'])
+scope = ' '.join(access_scopes['MODIFY_PLAYBACK_LISTENING_PLUS']+access_scopes['MODIFY_LIBRARY_PLAYLIST_PLUS'])
 
 # Urls for getting data from Spotify API
 get_recommendations_url = os.getenv('GET_RECOMMENDATIONS_URL')
+get_current_user_profile_url = os.getenv('GET_CURRENT_USER_PROFILE_URL')
 
+# Urls for modifying data in Spotify API
+create_playlist_url = os.getenv('CREATE_PLAYLIST_URL')
+edit_items_in_playlist_url = os.getenv('EDIT_ITEMS_IN_PLAYLIST_URL')
+
+# User data
+user_id = os.getenv('USER_ID')
+user_name = os.getenv('USER_NAME')
 # Implenting a logger function for seperate module logging
 class Logger:
     def __init__(self, log_name, log_file, log_to_console=False, debug_mode=None):
@@ -195,7 +204,6 @@ class SpotifyAPIHelper:
     # Refer to documentation for @classmethod usecase
     @classmethod
     def start_local_server(cls):
-        global auth_code
         # Set the port number for the local server
         PORT = 8000
 
@@ -215,18 +223,33 @@ class SpotifyAPIHelper:
 
                 # Extract the authorization code from the URL
                 auth_code = redirected_url.split('?code=')[1]
+             
                 logger.log_message('info', f"From {cls.start_local_server.__name__} : Authorization code captured successfully, Auth Code: {auth_code}")
-
                 # Store the authorization code in the environment configuration
-                set_key(env_file, 'AUTHORIZATION_CODE', auth_code)
-                logger.log_message('info', f"From {cls.start_local_server.__name__} : Authorization code saved in the environment configuration file")
-    
+                cls.update_tokens(auth_code,access=False, refresh=False, auth=True)
+             
+                var = 1
+                    
                 # Respond to the user's browser with a success message
-                self.send_response(200)
-                self.send_header('Content-type', 'text/html')
-                self.end_headers()
-                self.wfile.write(b'Authorization code captured successfully. You can now close this window.')
-                
+                # Try responding with the HTML file if it exists, otherwise respond with a success message
+                try:
+                    # Open and read the HTML file
+                    with open(f'{spotify_data_path}/auth_page.html', 'rb') as file:
+                        html_response = file.read()
+                    
+                    # Send the response with HTML content
+                    self.send_response(200)
+                    self.send_header('Content-type', 'text/html')
+                    self.end_headers()
+                    self.wfile.write(html_response)
+               
+                # If file not found then respond with a simple success message
+                except FileNotFoundError:
+                    self.send_response(200)
+                    self.send_header('Content-type', 'text/html')
+                    self.end_headers()
+                    self.wfile.write(b'Authorization code captured successfully. You can now close this window.')
+                    
 
         # Start the local web server on the specified port which listens for incoming connections.
         with socketserver.TCPServer(("", PORT), CustomHandler) as httpd:
@@ -263,7 +286,8 @@ class SpotifyAPIHelper:
             else:
                 # Return status_code 200 if it's successfull
                 return {
-                    'status_code': 200
+                    'status_code': 200,
+                    'auth_code': auth_code
                 }
                 
 
@@ -271,6 +295,8 @@ class SpotifyAPIHelper:
     # and if the refresh_token is expired it will get a new auth_token through authorization
     @classmethod
     def refresh_or_get_new_tokens(cls):
+        global auth_code, refresh_token, access_token
+        
         logger.log_message('debug',f'From {cls.refresh_or_get_new_tokens.__name__} : Refreshing or getting new tokens')
         
         # Try to refresh the access token only if the token values are not none:
@@ -287,13 +313,18 @@ class SpotifyAPIHelper:
 
                 # Checking if the auth code fetching was successfull
                 if response['status_code'] == 200:
+                    
                     # Now we can proceed to get the access token
                     token = cls.get_access_and_refresh_tokens()
                     
                     # There is another error occuring even after a valid auth code 
                     if token.get('error') == 'invalid_grant':
-                        logger.log_message('error', f"From {cls.refresh_or_get_new_tokens.__name__} : {token.get('error_description')}")
-                
+                        logger.log_message('error', f"From {cls.refresh_or_get_new_tokens.__name__} : From code block 1 trying after fetching auth code {token.get('error_description')}")
+
+                    # If the error is inavlid_client
+                    elif token.get('error') == 'invalid_client':
+                        logger.log_message('error', f"From {cls.refresh_or_get_new_tokens.__name__} : Invalid client credentials.")
+                    
                     # If the token is not returning an error, it means the tokens were successfully generated
                     else:
                         # Updating the env file with new tokens
@@ -307,7 +338,10 @@ class SpotifyAPIHelper:
                 else:
                     logger.log_message('warning', f"From {cls.refresh_or_get_new_tokens.__name__} : Unexpected error occured")
                     
-            
+            # If invalid client
+            elif token.get('error') == 'invalid_client':
+                logger.log_message('error', f"From {cls.refresh_or_get_new_tokens.__name__} : Invalid client credentials.")
+                
             # refresh_access_token is returning a valid token, means the fetch was successfull 
             else:
                 # Updating the env file with new access token
@@ -425,14 +459,18 @@ class SpotifyAPIHelper:
 
     # To update the access token and refresh token in the env file
     @classmethod
-    def update_tokens(cls, token, access=True, refresh=True):
-        global access_token, refresh_token
+    def update_tokens(cls, token, access=True, refresh=True, auth=False):
+        global auth_code, access_token, refresh_token, expires_in
         
         if token:
             # If instructions are to set access token then update it
             if access:
                 access_token = token['access_token']
+                # Setting the expiry time of the access token to be 3600 seconds (1 hour) from now
+                
+                expires_in = time.perf_counter() + 3600
                 logger.log_message('info', f'{"From " + cls.update_tokens.__name__} : Access token is set.')
+                
                 set_key(env_file, 'ACCESS_TOKEN', access_token)
             
             # If instructions are to set refresh token then update it
@@ -441,20 +479,84 @@ class SpotifyAPIHelper:
                 logger.log_message('info', f'{"From " + cls.update_tokens.__name__} : Refresh token is set.')
                 set_key(env_file, 'REFRESH_TOKEN', refresh_token) 
 
+            if auth:
+                auth_code = token
+                logger.log_message('info', f'{"From " + cls.update_tokens.__name__} : Authorization code is set.')
+                set_key(env_file, 'AUTHORIZATION_CODE', auth_code)
 
     # To retrieve the any variable from the env file in real time
     @classmethod
-    def get(cls, key):
-        if key == 'ACCESS_TOKEN':
+    def get_access_token(cls):
+        if cls.is_access_token_expired():
             cls.refresh_or_get_new_tokens()
-            return os.getenv(key)
+            return access_token
         else:
-            return os.getenv(key)
+            return access_token
+            
 
-
+    # To check if the access token is expired
+    @classmethod
+    def is_access_token_expired(cls):
+        return (time.perf_counter() > expires_in)
+        
 # The Spotify API Get recommendations to get the songs according to the user
-class SpotifyAPIGetRecommendations:
+class SpotifyAPIUtility:
     
+    # To get current users profile
+    @classmethod
+    def get_current_user_profile(cls, access_token=None):
+        global user_id, user_name
+        access_token = access_token if access_token else SpotifyAPIHelper.get_access_token()
+        
+        # Sending a get request to get the current user's profile
+        logger.log_message('info', f"{'From ' + cls.get_current_user_profile.__name__} : Retrieving user's profile")    
+        response = requests.get(
+            get_current_user_profile_url,
+            headers={'Authorization': f"Bearer {access_token}"}
+        )
+
+        # If the status_code is 200, means the method was successful
+        if response.status_code == 200:
+            logger.log_message('info', "Successfully retrieved user's profile")
+            json_resp = response.json()
+            
+            user_id = json_resp['id']
+            user_name = json_resp['display_name']
+
+            user = {
+                'user_id' : user_id,
+                'user_name' : user_name
+            }
+            
+            # Updating the environment variables with the user's id and name
+            set_key(env_file, 'USER_ID', user_id)
+            set_key(env_file, 'USER_NAME', user_name)
+            
+            logger.log_message('info', f"From {cls.get_current_user_profile.__name__} : Updated environment variables with user's id and name")
+            
+        # If the status code is 401, means bad or expired access token
+        elif response.status_code == 401:
+            # Invalid access token
+            json_resp = response.json()
+            logger.log_message('error', json_resp['error']['message'])
+        
+        # If some other error occurs
+        else:
+            json_resp = response.json()
+            logger.log_message('error', f"From {cls.get_current_user_profile.__name__} : Status code: {response.status_code} Error: {json_resp['error']['message']}")
+    
+    
+    # A method to get user_id
+    @classmethod
+    def get_user_id(cls):
+        global user_id
+        if user_id:
+            return user_id
+        else:
+            SpotifyAPIUtility.get_current_user_profile()
+            return user_id
+        
+        
     # Refer to documentation for @staticmethod usecase  
     
     # To get the recommendations (in form of tracks) from the spotify api
@@ -485,7 +587,8 @@ class SpotifyAPIGetRecommendations:
     # @return: The array of tracks to be returned
     
     @staticmethod         
-    def get_recommendations_spotify(parameters,access_token=SpotifyAPIHelper.get('ACCESS_TOKEN')): 
+    def get_recommendations_spotify(parameters,access_token=None):
+        access_token = access_token if access_token else SpotifyAPIHelper.get_access_token() 
         # Sending a get request to get tracks
         response = requests.get(
             get_recommendations_url,
@@ -506,7 +609,7 @@ class SpotifyAPIGetRecommendations:
         
         # If the status_code is 200, means the method was successful
         if response.status_code == 200:
-            logger.log_message('info', f'{"From " + SpotifyAPIGetRecommendations.get_recommendations_spotify.__name__} :Successfully retrieved recommendations playlists')
+            logger.log_message('info', f'{"From " + SpotifyAPIUtility.get_recommendations_spotify.__name__} :Successfully retrieved recommendations playlists')
             json_resp = response.json()
             # Retrieving tracks from the json response
             playlist = []
@@ -515,6 +618,7 @@ class SpotifyAPIGetRecommendations:
                 track = {
                     'track_name': track['name'],
                     'track_id': track['id'],
+                    'track_uri': track['uri'],
                     'track_populalrity': track['popularity'],
                     'artists': [{'artist_name' : artist['name'], 'artist_id': artist['id']} for artist in track['artists']]                
                 }
@@ -527,7 +631,7 @@ class SpotifyAPIGetRecommendations:
         elif response.status_code == 401:
             # Invalid access token
             json_resp = response.json()
-            logger.log_message('error', f'{"From " + SpotifyAPIGetRecommendations.get_recommendations_spotify.__name__} : {json_resp["error"]["message"]}')
+            logger.log_message('error', f'{"From " + SpotifyAPIUtility.get_recommendations_spotify.__name__} : {json_resp["error"]["message"]}')
             
             # Return an empty array
             return []
@@ -535,15 +639,154 @@ class SpotifyAPIGetRecommendations:
         # If the status_code is not 200 or 401, means unexpected error
         else:
             json_resp = response.json()
-            logger.log_message('error', f'{"From " + SpotifyAPIGetRecommendations.get_recommendations_spotify.__name__} : Status code: {response.status_code} Error: {json_resp["error"]["message"]}')            
+            logger.log_message('error', f'{"From " + SpotifyAPIUtility.get_recommendations_spotify.__name__} : Status code: {response.status_code} Error: {json_resp["error"]["message"]}')            
             
             # Return an empty array
             return []
         
+    
+    
+    # To create a playlist of the recommended songs
+    @staticmethod
+    def create_playlist_spotify(playlist_name, description, user_id=None, access_token=None):
+        access_token = access_token if access_token else SpotifyAPIHelper.get_access_token()
+        user_id = user_id if user_id else SpotifyAPIUtility.get_user_id()
+        
+        logger.log_message('info', f"From {SpotifyAPIUtility.create_playlist_spotify.__name__} : Creating playlist")
+        # Sending a post request to create a playlist
+        response = requests.post(
+            create_playlist_url.format(user_id=user_id),
+            headers={
+                'Authorization': f'Bearer {access_token}',
+                'Content-Type' : 'application/json'
+            }, 
+            json={
+                'name': playlist_name,
+                'description': description,
+                'public': True
+            }
+        )
+        
+        # If the status_code is 201, means the method was successful
+        if response.status_code == 201:
+            json_resp = response.json()
+            
+            logger.log_message('info', f"From {SpotifyAPIUtility.create_playlist_spotify.__name__} : Successfully created playlist, playlist_id : {json_resp['id']}")
+            
+            # Returning the playlist id
+            return {
+                'playlist_id': json_resp['id'],
+                'playlist_url': json_resp['external_urls']['spotify']
+            }
+        
+        # If the status code is 401, means bad or expired access token
+        elif response.status_code == 401:
+            # Invalid access token
+            json_resp = response.json()
+            logger.log_message('error', f"From {SpotifyAPIUtility.create_playlist_spotify.__name__} : Error : {json_resp['error']['message']}")
+        
+            # Return None
+            return ''
+        
+        # If some other error occurs
+        else:
+            json_resp = response.json()
+            logger.log_message('error', f"From {SpotifyAPIUtility.create_playlist_spotify.__name__} : Status code: {response.status_code} Error: {json_resp['error']['message']}")
+        
+            return ''
+        
+   
+    # To add itmes to a playlist
+    @staticmethod
+    def add_items_to_spotify_playlist(playlist_id, track_uris, access_token=None):
+        access_token = access_token if access_token else SpotifyAPIHelper.get_access_token()
+        
+        # Sending a post request to add items to a playlist
+        logger.log_message('info', f"From {SpotifyAPIUtility.add_items_to_spotify_playlist.__name__} : Adding items to a playlist")
+        response = requests.post(
+            edit_items_in_playlist_url.format(playlist_id=playlist_id),
+            headers={
+                'Authorization': f'Bearer {access_token}',
+                'Content-Type' : 'application/json'
+            },
+            json={
+                'uris': track_uris,
+                'position': 0,
+            }
+        )
+        
+        # If the status_code is 201, means the method was successful
+        if response.status_code == 201:
+            json_resp = response.json()
+            
+            logger.log_message('info', f"From {SpotifyAPIUtility.add_items_to_spotify_playlist.__name__} : Successfully added items to a playlist, snapshot_id: {json_resp['snapshot_id']}")
+            
+            # Returning the playlist id
+            return json_resp['snapshot_id']
+        
+        # If the status code is 401, means bad or expired access token
+        elif response.status_code == 401:
+            # Invalid access token
+            json_resp = response.json()
+            logger.log_message('error', f'{"From " + SpotifyAPIUtility.add_items_to_spotify_playlist.__name__} : {json_resp["error"]["message"]}')
+        
+            # Return None 
+            return ''
+        
+        # If some other error occurs
+        else:
+            json_resp = response.json()
+            logger.log_message('error', f"From {SpotifyAPIUtility.add_items_to_spotify_playlist.__name__} : Status code: {response.status_code} Error: {json_resp['error']['message']}")
+        
+            return ''
+        
+        
+    # A unified method to include create playlist and adding items to the playlist
+    @classmethod
+    def create_and_add_to_playlist(cls, parameters):
+        
+        logger.log_message('info', f"From {cls.create_and_add_to_playlist.__name__} : Creating and adding items to a playlist")
+
+        # First create the playlist
+        created_playlist = cls.create_playlist_spotify(parameters['playlist_name'],parameters['playlist_description'])
+        
+        # Check if the playlist_id is not empty
+        if created_playlist['playlist_id']:
+            parameters['playlist_id'] = created_playlist['playlist_id']
+            parameters['playlist_url'] = created_playlist['playlist_url']
+
+            # Then add the items to the playlist
+            parameters['snapshot_id'] = cls.add_items_to_spotify_playlist(parameters['playlist_id'], parameters['track_uris'])
+            
+            # Check if the add items was successfull by checking if the snapshot_id is not empty
+            if parameters['snapshot_id']:
+                logger.log_message('info', f"From {cls.create_and_add_to_playlist.__name__} : Successfully created and added items to a playlist")
+                
+                return {
+                    'playlist_id': parameters['playlist_id'],
+                    'playlist_url': parameters['playlist_url'],
+                    'snapshot_id': parameters['snapshot_id'],
+                    'is_playlist_created': True,
+                }
+            
+            # If the snapshot_id is empty, means the add items was not successfull
+            else:
+                logger.log_message('error', f"From {cls.create_and_add_to_playlist.__name__} : Failed to add items to a playlist")
+                
+                return {
+                    'is_playlist_created': False,
+                }
+                
+        # If the playlist_id is not returned
+        else:
+            logger.log_message('error', f"From {cls.create_and_add_to_playlist.__name__} : Failed to create playlist")            
+            
+            return {
+                'is_playlist_created': False,
+            }
+            
         
 if __name__ == '__main__':
     # logger = Logger('SpotifyAPI', f'{log_data_path}SpotifyAPI.log', log_to_console=False, debug_mode=False)
     SAH = SpotifyAPIHelper
-    # print(SAH.get('ACCESS_TOKEN'))
-    # print(SAH.get('REFRESH_TOKEN'))
-    # print(SAH.get('AUTHORIZATION_CODE'))
+    print(SAH.get_access_token())

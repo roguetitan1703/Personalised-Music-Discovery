@@ -13,13 +13,13 @@ sys.path.append(f'{project_root}/data')
 sys.path.append(f'{project_root}/src')
 
 # Import local modules
-from Spotify_.SpotifyAPI import SpotifyAPIGetRecommendations, SpotifyAPIHelper
+from Spotify_.SpotifyAPI import SpotifyAPIUtility
 
 # Get the recommendation tracks with the SpotifyAPIGetRecommendations method get_recommendations_spotify
 def get_recommendation_tracks():
       
-      # Creating a parameters dictionary to manage high number of params passing into the function
-      parameters = {
+      # Creating a parameters dictionary to manage high number of params passing into the get_recommendation_spotify() function 
+      recommendation_parameters = {
             'limit': limit.get(),
             'seed_genres': genre.get().lower(),
             # 'seed_artist': '',
@@ -30,23 +30,41 @@ def get_recommendation_tracks():
             'target_energy' : energy.get()
             }
       
-      # Getting the playlist from the get_recommendation_spotify method
-      playlist = SpotifyAPIGetRecommendations.get_recommendations_spotify(parameters=parameters)
+      # Get the playlist from the get_recommendation_spotify method
+      playlist = SpotifyAPIUtility.get_recommendations_spotify(parameters=recommendation_parameters)
       
-      print('Genre: ',genre.get())
-      print('Acousticness: ',acousticness.get())
-      print('Danceability: ',danceability.get())
-      print('Instrumentalness: ',instrumentalness.get())
-      print('Energy: ',energy.get())
-      print('Number of Songs: ',limit.get())
-      print('\n')
+      # Make the track_uris array which contains uri of all the tracks in the playlist
+      # R// refer the function SpotifyAPIUtility.get_recommendation_spotify() for the format of the data stored in the array playlist 
+      playlist_creation_parameters = {
+            'playlist_name' : f'{genre.get()} Playlist',
+            'playlist_description' : f'This is a playlist of {genre.get()} songs created by Personalised Music Discovery Project',
+            'track_uris' : [track['track_uri'] for track in playlist]
+      }
       
-      # Printing Playlist
-      ctr = 0
-      for track in playlist:
-            ctr += 1
-            artists_name = ', '.join([artist['artist_name'] for artist in track['artists']])
-            print(f"{ctr}. {track['track_name']} by {artists_name}")
+      # Create a playlist in the user's Spotify account
+      created_playlist = SpotifyAPIUtility.create_and_add_to_playlist(parameters=playlist_creation_parameters)
+      
+      if created_playlist['is_playlist_created']:
+            print(f'{genre.get()} Playlist Created Successfully')
+            print(f'Playlist url: {created_playlist["playlist_url"]}')
+
+      else:
+            print('Playlist Creation Failed')
+      # # Print the data sent to the function
+      # print('Genre: ',genre.get())
+      # print('Acousticness: ',acousticness.get())
+      # print('Danceability: ',danceability.get())
+      # print('Instrumentalness: ',instrumentalness.get())
+      # print('Energy: ',energy.get())
+      # print('Number of Songs: ',limit.get())
+      # print('\n')
+      
+      # # Printing Playlist
+      # ctr = 0
+      # for track in playlist:
+      #       ctr += 1
+      #       artists_name = ', '.join([artist['artist_name'] for artist in track['artists']])
+      #       print(f"{ctr}. {track['track_name']} by {artists_name}")
             
 
 
