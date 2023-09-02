@@ -70,7 +70,7 @@ def get_recommendation_tracks():
 
       else:
             print('Playlist Creation Failed')
-      
+
       # Save the playlist details locally
       save_playlist(created_playlist)      
 
