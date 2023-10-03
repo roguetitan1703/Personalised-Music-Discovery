@@ -1,7 +1,9 @@
 # Importing gui
 from tkinter import *
 from tkinter.ttk import *
-from tkinter import IntVar
+from tkinter import messagebox
+import webbrowser
+
 
 # Importing other modules
 import os, sys
@@ -17,6 +19,7 @@ from Spotify_.SpotifyAPI import SpotifyAPIUtility
 from helpers_.json_helper import dump_file, read_file
 
 spotify_data_path = f'{project_root}/src/data/Spotify_/'
+tracks_dataset_data_path = f'{project_root}/src/data/tracks_dataset/'
 
 # To save the playlists details locally
 def save_playlist(playlist, playlist_file=f'{spotify_data_path}/playlists.json'):
@@ -33,7 +36,21 @@ def save_playlist(playlist, playlist_file=f'{spotify_data_path}/playlists.json')
       # Saving the details into the files
       dump_file(playlist_file, playlists)
       
-            
+# Function to tweek the target ranges in refrence with the max and min values to the specific genre
+def tweek_target_ranges(genre, target, value):
+      # Fetching genre specific features aggregates
+      genre_feature_agg = read_file(f'{tracks_dataset_data_path}/genre_stats.json')[genre.lower()]
+      
+      # Fetching the max and min values of the genre
+      max_value = genre_feature_agg[target]['max']
+      min_value = genre_feature_agg[target]['min']
+      
+      # Calculating the tweeked value
+      tweeked_value = (max_value - min_value) * (value) + min_value
+      
+      return tweeked_value
+        
+      
 # Get the recommendation tracks with the SpotifyAPIGetRecommendations method get_recommendations_spotify
 def get_recommendation_tracks():
       
@@ -50,30 +67,87 @@ def get_recommendation_tracks():
             'target_energy' : energy_selector_var.get()
             }
       
-      # Get the playlist from the get_recommendation_spotify method
+      # Filtering and tweeking the parameters
+      # Acousticness
+      if recommendation_parameters['target_acousticness'] == 0.0:
+            del recommendation_parameters['target_acousticness']
+      else:
+            recommendation_parameters['target_acousticness'] = tweek_target_ranges(genre_choice_var.get().lower(), 'acousticness', recommendation_parameters['target_acousticness'])
+      
+      # Speechiness
+      if recommendation_parameters['target_speechiness'] == 0.0:
+            del recommendation_parameters['target_speechiness']
+      else:
+            recommendation_parameters['target_speechiness'] = tweek_target_ranges(genre_choice_var.get().lower(), 'speechiness', recommendation_parameters['target_speechiness'])
+            
+      # Danceability
+      if recommendation_parameters['target_danceability'] == 0.0:
+            del recommendation_parameters['target_danceability']
+      else:
+            recommendation_parameters['target_danceability'] = tweek_target_ranges(genre_choice_var.get().lower(), 'danceability', recommendation_parameters['target_danceability'])
+      
+      # Instrumentalness
+      if recommendation_parameters['target_instrumentalness'] == 0.0:
+            del recommendation_parameters['target_instrumentalness']
+      else:
+            recommendation_parameters['target_instrumentalness'] = tweek_target_ranges(genre_choice_var.get().lower(), 'instrumentalness', recommendation_parameters['target_instrumentalness'])
+           
+      # Energy
+      if recommendation_parameters['target_energy'] == 0.0:
+            del recommendation_parameters['target_energy']
+      else:
+            recommendation_parameters['target_energy'] = tweek_target_ranges(genre_choice_var.get().lower(), 'energy', recommendation_parameters['target_energy'])
+            
+                  
+      # Get the playlist from the get_recommendation_spotify methodg
       tracks_array = SpotifyAPIUtility.get_recommendations_spotify(parameters=recommendation_parameters)
       
-      # Make the track_uris array which contains uri of all the tracks in the playlist
-      # R// refer the function SpotifyAPIUtility.get_recommendation_spotify() for the format of the data stored in the array playlist 
-      playlist_creation_parameters = {
-            'playlist_name' : f'{genre_choice_var.get()} Playlist',
-            'playlist_description' : f'This is a playlist of {genre_choice_var.get()} songs created by Personalised Music Discovery Project',
-            'track_uris' : [track['track_uri'] for track in tracks_array]
-      }
+      # If the tracks array is not empty
+      if tracks_array:
       
-      # Create a playlist in the user's Spotify account
-      created_playlist = SpotifyAPIUtility.create_and_add_to_playlist(parameters=playlist_creation_parameters)
-      
-      if created_playlist['is_playlist_created']:
-            print(f'{genre_choice_var.get()} Playlist Created Successfully')
-            print(f'Playlist url: {created_playlist["playlist_url"]}')
+            # Make the track_uris array which contains uri of all the tracks in the playlist
+            # R// refer the function SpotifyAPIUtility.get_recommendation_spotify() for the format of the data stored in the array playlist 
+            playlist_creation_parameters = {
+                  'playlist_name' : f'{genre_choice_var.get()} Playlist',
+                  'playlist_description' : f'This is a playlist of {genre_choice_var.get()} songs created by Personalised Music Discovery Project',
+                  'track_uris' : [track['track_uri'] for track in tracks_array]
+            }
+            
+            # Create a playlist in the user's Spotify account
+            created_playlist = SpotifyAPIUtility.create_and_add_to_playlist(parameters=playlist_creation_parameters)
+            
+            if created_playlist['is_playlist_created']:
+                  print(f'{genre_choice_var.get()} Playlist Created Successfully')
+                  print(f'Playlist url: {created_playlist["playlist_url"]}')
+            
+                  show_playlist(created_playlist)
+                  # Save the playlist details locally
+                  save_playlist(created_playlist)      
 
+                  print(recommendation_parameters)
+                  
+            else:
+                  print('Playlist Creation Failed')
+
+      # If it's empty
       else:
-            print('Playlist Creation Failed')
+            print("Sorry, no track fullfills your requirements")
+            
+def show_playlist(created_playlist):
+      # Check if playlist creation was successful
+      if created_playlist['is_playlist_created'] == True:
+                  
+            response = messagebox.askyesno(title='Playlist Created!', message='Do you want to open the playlist?')
+            
+            if response:
+                  webbrowser.open(created_playlist['playlist_url'])
+            else:
+                  pass
 
-      # Save the playlist details locally
-      save_playlist(created_playlist)      
-
+      # If not successfull
+      
+      else:
+            messagebox.showerror(title='Playlist Creation Failed', message='Sorry, the playlist could not be created')
 
 # Creating a root windiow
 root = Tk()
@@ -222,6 +296,7 @@ tracks_limit.grid(row=7, column=1)
 # Creating a search button
 
 discover_music  = Button(root, text='Discover', command= get_recommendation_tracks, width=10)
-discover_music.grid(row=8,columnspan=2)
+discover_music.grid(row=8,columnspan=2,pady=10)
+
 
 root.mainloop()

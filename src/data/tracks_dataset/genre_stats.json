@@ -1,0 +1,4790 @@
+{
+    "acoustic": {
+        "popularity": {
+            "max": 82,
+            "min": 0,
+            "mean": 42.483
+        },
+        "danceability": {
+            "max": 0.879,
+            "min": 0.213,
+            "mean": 0.549593
+        },
+        "energy": {
+            "max": 0.974,
+            "min": 0.0119,
+            "mean": 0.4353681
+        },
+        "loudness": {
+            "max": -1.963,
+            "min": -28.276,
+            "mean": -9.447843
+        },
+        "speechiness": {
+            "max": 0.403,
+            "min": 0.0232,
+            "mean": 0.043247
+        },
+        "acousticness": {
+            "max": 0.992,
+            "min": 5.53e-06,
+            "mean": 0.5668163983300001
+        },
+        "instrumentalness": {
+            "max": 0.978,
+            "min": 0.0,
+            "mean": 0.03833583693
+        },
+        "liveness": {
+            "max": 0.944,
+            "min": 0.0284,
+            "mean": 0.15324439999999998
+        }
+    },
+    "afrobeat": {
+        "popularity": {
+            "max": 75,
+            "min": 0,
+            "mean": 24.399
+        },
+        "danceability": {
+            "max": 0.974,
+            "min": 0.285,
+            "mean": 0.6695800000000001
+        },
+        "energy": {
+            "max": 0.996,
+            "min": 0.198,
+            "mean": 0.702812
+        },
+        "loudness": {
+            "max": -2.038,
+            "min": -20.913,
+            "mean": -7.789352999999999
+        },
+        "speechiness": {
+            "max": 0.924,
+            "min": 0.0231,
+            "mean": 0.0865789
+        },
+        "acousticness": {
+            "max": 0.977,
+            "min": 7.89e-05,
+            "mean": 0.27085995230000004
+        },
+        "instrumentalness": {
+            "max": 0.982,
+            "min": 0.0,
+            "mean": 0.25348287056
+        },
+        "liveness": {
+            "max": 0.992,
+            "min": 0.0219,
+            "mean": 0.184596
+        }
+    },
+    "alt-rock": {
+        "popularity": {
+            "max": 93,
+            "min": 0,
+            "mean": 33.943
+        },
+        "danceability": {
+            "max": 0.922,
+            "min": 0.112,
+            "mean": 0.5344929999999999
+        },
+        "energy": {
+            "max": 0.997,
+            "min": 0.201,
+            "mean": 0.754173
+        },
+        "loudness": {
+            "max": -1.795,
+            "min": -18.108,
+            "mean": -6.191489
+        },
+        "speechiness": {
+            "max": 0.304,
+            "min": 0.023,
+            "mean": 0.055070499999999994
+        },
+        "acousticness": {
+            "max": 0.983,
+            "min": 3.42e-06,
+            "mean": 0.12216223569000001
+        },
+        "instrumentalness": {
+            "max": 0.88,
+            "min": 0.0,
+            "mean": 0.05409657007
+        },
+        "liveness": {
+            "max": 0.989,
+            "min": 0.0144,
+            "mean": 0.2102486
+        }
+    },
+    "alternative": {
+        "popularity": {
+            "max": 93,
+            "min": 0,
+            "mean": 24.337
+        },
+        "danceability": {
+            "max": 0.969,
+            "min": 0.112,
+            "mean": 0.559927
+        },
+        "energy": {
+            "max": 0.991,
+            "min": 0.19,
+            "mean": 0.72003
+        },
+        "loudness": {
+            "max": -0.223,
+            "min": -17.764,
+            "mean": -6.078777
+        },
+        "speechiness": {
+            "max": 0.473,
+            "min": 0.0233,
+            "mean": 0.0701007
+        },
+        "acousticness": {
+            "max": 0.983,
+            "min": 3.42e-06,
+            "mean": 0.14782023359
+        },
+        "instrumentalness": {
+            "max": 0.847,
+            "min": 0.0,
+            "mean": 0.0381586047
+        },
+        "liveness": {
+            "max": 0.965,
+            "min": 0.0243,
+            "mean": 0.2013763
+        }
+    },
+    "ambient": {
+        "popularity": {
+            "max": 84,
+            "min": 0,
+            "mean": 44.191
+        },
+        "danceability": {
+            "max": 0.853,
+            "min": 0.0,
+            "mean": 0.3678668
+        },
+        "energy": {
+            "max": 0.974,
+            "min": 0.00144,
+            "mean": 0.23716178999999998
+        },
+        "loudness": {
+            "max": -4.431,
+            "min": -41.808,
+            "mean": -18.601364999999998
+        },
+        "speechiness": {
+            "max": 0.761,
+            "min": 0.0,
+            "mean": 0.041561999999999995
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 1.5e-06,
+            "mean": 0.7767899403999999
+        },
+        "instrumentalness": {
+            "max": 0.986,
+            "min": 0.0,
+            "mean": 0.6762211611
+        },
+        "liveness": {
+            "max": 0.975,
+            "min": 0.0345,
+            "mean": 0.12928309999999998
+        }
+    },
+    "anime": {
+        "popularity": {
+            "max": 83,
+            "min": 0,
+            "mean": 48.772
+        },
+        "danceability": {
+            "max": 0.898,
+            "min": 0.0835,
+            "mean": 0.5374513999999999
+        },
+        "energy": {
+            "max": 0.994,
+            "min": 0.0123,
+            "mean": 0.6741083
+        },
+        "loudness": {
+            "max": 0.698,
+            "min": -33.484,
+            "mean": -7.932289000000001
+        },
+        "speechiness": {
+            "max": 0.507,
+            "min": 0.0227,
+            "mean": 0.08732300000000001
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 4.79e-06,
+            "mean": 0.26773437274
+        },
+        "instrumentalness": {
+            "max": 0.976,
+            "min": 0.0,
+            "mean": 0.26297120969000004
+        },
+        "liveness": {
+            "max": 0.971,
+            "min": 0.0233,
+            "mean": 0.19717500000000002
+        }
+    },
+    "black-metal": {
+        "popularity": {
+            "max": 58,
+            "min": 0,
+            "mean": 22.449
+        },
+        "danceability": {
+            "max": 0.63,
+            "min": 0.0629,
+            "mean": 0.2964109
+        },
+        "energy": {
+            "max": 1.0,
+            "min": 0.0887,
+            "mean": 0.8748973
+        },
+        "loudness": {
+            "max": -1.456,
+            "min": -23.952,
+            "mean": -6.528523999999999
+        },
+        "speechiness": {
+            "max": 0.453,
+            "min": 0.0238,
+            "mean": 0.08715620000000002
+        },
+        "acousticness": {
+            "max": 0.985,
+            "min": 0.0,
+            "mean": 0.02705552076
+        },
+        "instrumentalness": {
+            "max": 0.993,
+            "min": 0.0,
+            "mean": 0.44084682085000004
+        },
+        "liveness": {
+            "max": 0.988,
+            "min": 0.0186,
+            "mean": 0.2414203
+        }
+    },
+    "bluegrass": {
+        "popularity": {
+            "max": 69,
+            "min": 0,
+            "mean": 25.676
+        },
+        "danceability": {
+            "max": 0.822,
+            "min": 0.25,
+            "mean": 0.5346920000000001
+        },
+        "energy": {
+            "max": 0.942,
+            "min": 0.0134,
+            "mean": 0.5302796000000001
+        },
+        "loudness": {
+            "max": -3.71,
+            "min": -24.042,
+            "mean": -9.922818999999999
+        },
+        "speechiness": {
+            "max": 0.323,
+            "min": 0.0237,
+            "mean": 0.038690300000000004
+        },
+        "acousticness": {
+            "max": 0.993,
+            "min": 0.000496,
+            "mean": 0.5565877559999999
+        },
+        "instrumentalness": {
+            "max": 0.98,
+            "min": 0.0,
+            "mean": 0.13680780283000002
+        },
+        "liveness": {
+            "max": 0.988,
+            "min": 0.0116,
+            "mean": 0.2276738
+        }
+    },
+    "blues": {
+        "popularity": {
+            "max": 84,
+            "min": 0,
+            "mean": 31.188
+        },
+        "danceability": {
+            "max": 0.975,
+            "min": 0.132,
+            "mean": 0.568567
+        },
+        "energy": {
+            "max": 0.992,
+            "min": 0.0264,
+            "mean": 0.5818775
+        },
+        "loudness": {
+            "max": -0.734,
+            "min": -21.441,
+            "mean": -8.522547000000003
+        },
+        "speechiness": {
+            "max": 0.585,
+            "min": 0.0232,
+            "mean": 0.0639181
+        },
+        "acousticness": {
+            "max": 0.989,
+            "min": 2.15e-05,
+            "mean": 0.3981138453
+        },
+        "instrumentalness": {
+            "max": 0.888,
+            "min": 0.0,
+            "mean": 0.03409199347
+        },
+        "liveness": {
+            "max": 0.97,
+            "min": 0.0204,
+            "mean": 0.19183009999999998
+        }
+    },
+    "brazil": {
+        "popularity": {
+            "max": 82,
+            "min": 0,
+            "mean": 44.67
+        },
+        "danceability": {
+            "max": 0.934,
+            "min": 0.175,
+            "mean": 0.5629480000000001
+        },
+        "energy": {
+            "max": 0.995,
+            "min": 0.118,
+            "mean": 0.620721
+        },
+        "loudness": {
+            "max": -2.371,
+            "min": -19.476,
+            "mean": -7.602097
+        },
+        "speechiness": {
+            "max": 0.868,
+            "min": 0.023,
+            "mean": 0.0959996
+        },
+        "acousticness": {
+            "max": 0.967,
+            "min": 1.52e-05,
+            "mean": 0.3323864701
+        },
+        "instrumentalness": {
+            "max": 0.934,
+            "min": 0.0,
+            "mean": 0.013079727840000001
+        },
+        "liveness": {
+            "max": 0.989,
+            "min": 0.0231,
+            "mean": 0.297962
+        }
+    },
+    "breakbeat": {
+        "popularity": {
+            "max": 66,
+            "min": 0,
+            "mean": 20.123
+        },
+        "danceability": {
+            "max": 0.944,
+            "min": 0.193,
+            "mean": 0.6461939999999999
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.339,
+            "mean": 0.8532750000000001
+        },
+        "loudness": {
+            "max": 0.202,
+            "min": -22.821,
+            "mean": -6.0343800000000005
+        },
+        "speechiness": {
+            "max": 0.612,
+            "min": 0.0228,
+            "mean": 0.0857084
+        },
+        "acousticness": {
+            "max": 0.509,
+            "min": 3.8e-06,
+            "mean": 0.03141016618
+        },
+        "instrumentalness": {
+            "max": 0.963,
+            "min": 0.0,
+            "mean": 0.39585736039
+        },
+        "liveness": {
+            "max": 0.965,
+            "min": 0.0133,
+            "mean": 0.2203164
+        }
+    },
+    "british": {
+        "popularity": {
+            "max": 87,
+            "min": 0,
+            "mean": 43.802
+        },
+        "danceability": {
+            "max": 0.961,
+            "min": 0.0779,
+            "mean": 0.5012758
+        },
+        "energy": {
+            "max": 0.987,
+            "min": 0.00717,
+            "mean": 0.5071269700000001
+        },
+        "loudness": {
+            "max": -1.998,
+            "min": -35.134,
+            "mean": -10.519963
+        },
+        "speechiness": {
+            "max": 0.406,
+            "min": 0.0233,
+            "mean": 0.050010000000000006
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 9.56e-06,
+            "mean": 0.42794293626
+        },
+        "instrumentalness": {
+            "max": 0.995,
+            "min": 0.0,
+            "mean": 0.19367906512000002
+        },
+        "liveness": {
+            "max": 0.99,
+            "min": 0.0264,
+            "mean": 0.17429840000000002
+        }
+    },
+    "cantopop": {
+        "popularity": {
+            "max": 72,
+            "min": 0,
+            "mean": 34.739
+        },
+        "danceability": {
+            "max": 0.847,
+            "min": 0.19,
+            "mean": 0.5479089999999999
+        },
+        "energy": {
+            "max": 0.954,
+            "min": 0.054,
+            "mean": 0.4616962
+        },
+        "loudness": {
+            "max": -3.212,
+            "min": -21.221,
+            "mean": -9.667446
+        },
+        "speechiness": {
+            "max": 0.317,
+            "min": 0.0231,
+            "mean": 0.0390832
+        },
+        "acousticness": {
+            "max": 0.978,
+            "min": 7.66e-05,
+            "mean": 0.5362672456
+        },
+        "instrumentalness": {
+            "max": 0.485,
+            "min": 0.0,
+            "mean": 0.012618851720000001
+        },
+        "liveness": {
+            "max": 0.995,
+            "min": 0.0261,
+            "mean": 0.19194540000000002
+        }
+    },
+    "chicago-house": {
+        "popularity": {
+            "max": 78,
+            "min": 0,
+            "mean": 12.339
+        },
+        "danceability": {
+            "max": 0.981,
+            "min": 0.534,
+            "mean": 0.7661760000000001
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.18,
+            "mean": 0.733215
+        },
+        "loudness": {
+            "max": -1.859,
+            "min": -22.078,
+            "mean": -9.149465999999999
+        },
+        "speechiness": {
+            "max": 0.475,
+            "min": 0.0239,
+            "mean": 0.0743887
+        },
+        "acousticness": {
+            "max": 0.618,
+            "min": 1.84e-06,
+            "mean": 0.035310449570000006
+        },
+        "instrumentalness": {
+            "max": 0.967,
+            "min": 0.0,
+            "mean": 0.48280494636
+        },
+        "liveness": {
+            "max": 0.895,
+            "min": 0.0207,
+            "mean": 0.13756900000000002
+        }
+    },
+    "children": {
+        "popularity": {
+            "max": 77,
+            "min": 0,
+            "mean": 35.047
+        },
+        "danceability": {
+            "max": 0.979,
+            "min": 0.148,
+            "mean": 0.716467
+        },
+        "energy": {
+            "max": 0.978,
+            "min": 0.00728,
+            "mean": 0.49464518
+        },
+        "loudness": {
+            "max": -1.158,
+            "min": -31.323,
+            "mean": -9.406671
+        },
+        "speechiness": {
+            "max": 0.943,
+            "min": 0.0236,
+            "mean": 0.0927109
+        },
+        "acousticness": {
+            "max": 0.99,
+            "min": 2.94e-05,
+            "mean": 0.49867714840000005
+        },
+        "instrumentalness": {
+            "max": 0.978,
+            "min": 0.0,
+            "mean": 0.060557063710000004
+        },
+        "liveness": {
+            "max": 0.98,
+            "min": 0.0214,
+            "mean": 0.1813519
+        }
+    },
+    "chill": {
+        "popularity": {
+            "max": 93,
+            "min": 0,
+            "mean": 53.651
+        },
+        "danceability": {
+            "max": 0.963,
+            "min": 0.258,
+            "mean": 0.664346
+        },
+        "energy": {
+            "max": 0.943,
+            "min": 0.0307,
+            "mean": 0.42672289999999996
+        },
+        "loudness": {
+            "max": -1.486,
+            "min": -26.675,
+            "mean": -10.460978
+        },
+        "speechiness": {
+            "max": 0.723,
+            "min": 0.0255,
+            "mean": 0.1021671
+        },
+        "acousticness": {
+            "max": 0.994,
+            "min": 2.58e-05,
+            "mean": 0.5340969548000001
+        },
+        "instrumentalness": {
+            "max": 0.977,
+            "min": 0.0,
+            "mean": 0.17802204236
+        },
+        "liveness": {
+            "max": 0.919,
+            "min": 0.0326,
+            "mean": 0.16820000000000002
+        }
+    },
+    "classical": {
+        "popularity": {
+            "max": 79,
+            "min": 0,
+            "mean": 13.055
+        },
+        "danceability": {
+            "max": 0.797,
+            "min": 0.0713,
+            "mean": 0.38192279999999995
+        },
+        "energy": {
+            "max": 0.953,
+            "min": 0.000756,
+            "mean": 0.189827326
+        },
+        "loudness": {
+            "max": -1.383,
+            "min": -41.531,
+            "mean": -20.145216
+        },
+        "speechiness": {
+            "max": 0.766,
+            "min": 0.0262,
+            "mean": 0.050830600000000004
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 3.34e-05,
+            "mean": 0.9200489485000001
+        },
+        "instrumentalness": {
+            "max": 0.982,
+            "min": 0.0,
+            "mean": 0.61920762766
+        },
+        "liveness": {
+            "max": 0.928,
+            "min": 0.0349,
+            "mean": 0.1668376
+        }
+    },
+    "club": {
+        "popularity": {
+            "max": 85,
+            "min": 0,
+            "mean": 33.338
+        },
+        "danceability": {
+            "max": 0.958,
+            "min": 0.0601,
+            "mean": 0.6033541
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.0265,
+            "mean": 0.7217338
+        },
+        "loudness": {
+            "max": 4.532,
+            "min": -23.85,
+            "mean": -6.900815000000001
+        },
+        "speechiness": {
+            "max": 0.859,
+            "min": 0.0244,
+            "mean": 0.09432379999999999
+        },
+        "acousticness": {
+            "max": 0.994,
+            "min": 2.98e-06,
+            "mean": 0.15939126669
+        },
+        "instrumentalness": {
+            "max": 0.983,
+            "min": 0.0,
+            "mean": 0.34782217578
+        },
+        "liveness": {
+            "max": 0.981,
+            "min": 0.0387,
+            "mean": 0.1993685
+        }
+    },
+    "comedy": {
+        "popularity": {
+            "max": 75,
+            "min": 19,
+            "mean": 24.628
+        },
+        "danceability": {
+            "max": 0.95,
+            "min": 0.195,
+            "mean": 0.5771949999999999
+        },
+        "energy": {
+            "max": 0.994,
+            "min": 0.138,
+            "mean": 0.6999340000000001
+        },
+        "loudness": {
+            "max": -1.238,
+            "min": -26.105,
+            "mean": -10.457473
+        },
+        "speechiness": {
+            "max": 0.965,
+            "min": 0.0258,
+            "mean": 0.7556253
+        },
+        "acousticness": {
+            "max": 0.992,
+            "min": 0.000104,
+            "mean": 0.726476182
+        },
+        "instrumentalness": {
+            "max": 0.188,
+            "min": 0.0,
+            "mean": 0.00052477331
+        },
+        "liveness": {
+            "max": 0.99,
+            "min": 0.0279,
+            "mean": 0.661666
+        }
+    },
+    "country": {
+        "popularity": {
+            "max": 89,
+            "min": 0,
+            "mean": 17.028
+        },
+        "danceability": {
+            "max": 0.942,
+            "min": 0.199,
+            "mean": 0.5552940000000001
+        },
+        "energy": {
+            "max": 0.981,
+            "min": 0.0565,
+            "mean": 0.5968052
+        },
+        "loudness": {
+            "max": -2.515,
+            "min": -21.426,
+            "mean": -7.281778
+        },
+        "speechiness": {
+            "max": 0.361,
+            "min": 0.0233,
+            "mean": 0.042268
+        },
+        "acousticness": {
+            "max": 0.99,
+            "min": 0.000153,
+            "mean": 0.32122673599999996
+        },
+        "instrumentalness": {
+            "max": 0.888,
+            "min": 0.0,
+            "mean": 0.005584620429999999
+        },
+        "liveness": {
+            "max": 0.968,
+            "min": 0.0407,
+            "mean": 0.1772382
+        }
+    },
+    "dance": {
+        "popularity": {
+            "max": 100,
+            "min": 0,
+            "mean": 22.69
+        },
+        "danceability": {
+            "max": 0.965,
+            "min": 0.262,
+            "mean": 0.687856
+        },
+        "energy": {
+            "max": 0.981,
+            "min": 0.317,
+            "mean": 0.708583
+        },
+        "loudness": {
+            "max": 0.366,
+            "min": -11.193,
+            "mean": -5.362527
+        },
+        "speechiness": {
+            "max": 0.553,
+            "min": 0.0247,
+            "mean": 0.0876378
+        },
+        "acousticness": {
+            "max": 0.857,
+            "min": 2.97e-05,
+            "mean": 0.1311856039
+        },
+        "instrumentalness": {
+            "max": 0.905,
+            "min": 0.0,
+            "mean": 0.00835941532
+        },
+        "liveness": {
+            "max": 0.766,
+            "min": 0.0282,
+            "mean": 0.1681884
+        }
+    },
+    "dancehall": {
+        "popularity": {
+            "max": 83,
+            "min": 0,
+            "mean": 33.467
+        },
+        "danceability": {
+            "max": 0.966,
+            "min": 0.372,
+            "mean": 0.7341690000000001
+        },
+        "energy": {
+            "max": 0.985,
+            "min": 0.229,
+            "mean": 0.6852619999999999
+        },
+        "loudness": {
+            "max": -0.387,
+            "min": -19.917,
+            "mean": -6.1199580000000005
+        },
+        "speechiness": {
+            "max": 0.861,
+            "min": 0.0282,
+            "mean": 0.18698610000000002
+        },
+        "acousticness": {
+            "max": 0.871,
+            "min": 0.000503,
+            "mean": 0.215493569
+        },
+        "instrumentalness": {
+            "max": 0.595,
+            "min": 0.0,
+            "mean": 0.00713402996
+        },
+        "liveness": {
+            "max": 0.896,
+            "min": 0.0248,
+            "mean": 0.15676940000000003
+        }
+    },
+    "death-metal": {
+        "popularity": {
+            "max": 73,
+            "min": 0,
+            "mean": 32.169
+        },
+        "danceability": {
+            "max": 0.633,
+            "min": 0.0513,
+            "mean": 0.36841090000000004
+        },
+        "energy": {
+            "max": 1.0,
+            "min": 0.243,
+            "mean": 0.93147
+        },
+        "loudness": {
+            "max": -0.715,
+            "min": -14.888,
+            "mean": -5.350307
+        },
+        "speechiness": {
+            "max": 0.543,
+            "min": 0.0238,
+            "mean": 0.11125909999999999
+        },
+        "acousticness": {
+            "max": 0.655,
+            "min": 0.0,
+            "mean": 0.0066957065
+        },
+        "instrumentalness": {
+            "max": 0.971,
+            "min": 0.0,
+            "mean": 0.27573075265
+        },
+        "liveness": {
+            "max": 0.992,
+            "min": 0.0243,
+            "mean": 0.2432416
+        }
+    },
+    "deep-house": {
+        "popularity": {
+            "max": 90,
+            "min": 0,
+            "mean": 44.808
+        },
+        "danceability": {
+            "max": 0.93,
+            "min": 0.323,
+            "mean": 0.710448
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.263,
+            "mean": 0.741855
+        },
+        "loudness": {
+            "max": -0.488,
+            "min": -18.059,
+            "mean": -6.971501
+        },
+        "speechiness": {
+            "max": 0.35,
+            "min": 0.0242,
+            "mean": 0.0599097
+        },
+        "acousticness": {
+            "max": 0.725,
+            "min": 4.98e-06,
+            "mean": 0.10145172487999998
+        },
+        "instrumentalness": {
+            "max": 0.964,
+            "min": 0.0,
+            "mean": 0.23761450877
+        },
+        "liveness": {
+            "max": 0.934,
+            "min": 0.0182,
+            "mean": 0.17080760000000003
+        }
+    },
+    "detroit-techno": {
+        "popularity": {
+            "max": 58,
+            "min": 0,
+            "mean": 11.174
+        },
+        "danceability": {
+            "max": 0.983,
+            "min": 0.242,
+            "mean": 0.722568
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.0464,
+            "mean": 0.7105123999999999
+        },
+        "loudness": {
+            "max": -2.417,
+            "min": -26.37,
+            "mean": -11.085944
+        },
+        "speechiness": {
+            "max": 0.536,
+            "min": 0.0226,
+            "mean": 0.07271670000000001
+        },
+        "acousticness": {
+            "max": 0.85,
+            "min": 1.55e-06,
+            "mean": 0.06564069705999999
+        },
+        "instrumentalness": {
+            "max": 0.97,
+            "min": 0.0,
+            "mean": 0.6995483518000001
+        },
+        "liveness": {
+            "max": 0.982,
+            "min": 0.0112,
+            "mean": 0.15450909999999998
+        }
+    },
+    "disco": {
+        "popularity": {
+            "max": 83,
+            "min": 0,
+            "mean": 33.522
+        },
+        "danceability": {
+            "max": 0.937,
+            "min": 0.215,
+            "mean": 0.676692
+        },
+        "energy": {
+            "max": 1.0,
+            "min": 0.188,
+            "mean": 0.737565
+        },
+        "loudness": {
+            "max": -0.108,
+            "min": -19.793,
+            "mean": -7.422032000000001
+        },
+        "speechiness": {
+            "max": 0.375,
+            "min": 0.0222,
+            "mean": 0.059251599999999995
+        },
+        "acousticness": {
+            "max": 0.89,
+            "min": 1.66e-05,
+            "mean": 0.16621283039999998
+        },
+        "instrumentalness": {
+            "max": 0.951,
+            "min": 0.0,
+            "mean": 0.08095198711
+        },
+        "liveness": {
+            "max": 0.981,
+            "min": 0.0167,
+            "mean": 0.1953252
+        }
+    },
+    "disney": {
+        "popularity": {
+            "max": 72,
+            "min": 0,
+            "mean": 27.536
+        },
+        "danceability": {
+            "max": 0.889,
+            "min": 0.0649,
+            "mean": 0.4628742
+        },
+        "energy": {
+            "max": 0.94,
+            "min": 0.00207,
+            "mean": 0.30251886
+        },
+        "loudness": {
+            "max": -2.34,
+            "min": -40.114,
+            "mean": -14.969963
+        },
+        "speechiness": {
+            "max": 0.872,
+            "min": 0.0233,
+            "mean": 0.0748771
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 4.06e-05,
+            "mean": 0.7428922646
+        },
+        "instrumentalness": {
+            "max": 0.988,
+            "min": 0.0,
+            "mean": 0.38355346894000003
+        },
+        "liveness": {
+            "max": 0.846,
+            "min": 0.029,
+            "mean": 0.16853030000000002
+        }
+    },
+    "drum-and-bass": {
+        "popularity": {
+            "max": 69,
+            "min": 0,
+            "mean": 26.657
+        },
+        "danceability": {
+            "max": 0.924,
+            "min": 0.223,
+            "mean": 0.535486
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.38,
+            "mean": 0.8766349999999999
+        },
+        "loudness": {
+            "max": 0.92,
+            "min": -16.069,
+            "mean": -4.159624
+        },
+        "speechiness": {
+            "max": 0.679,
+            "min": 0.0262,
+            "mean": 0.0916362
+        },
+        "acousticness": {
+            "max": 0.483,
+            "min": 4.94e-06,
+            "mean": 0.025930575560000002
+        },
+        "instrumentalness": {
+            "max": 0.959,
+            "min": 0.0,
+            "mean": 0.37143774644
+        },
+        "liveness": {
+            "max": 0.943,
+            "min": 0.0153,
+            "mean": 0.2205559
+        }
+    },
+    "dub": {
+        "popularity": {
+            "max": 73,
+            "min": 0,
+            "mean": 40.039
+        },
+        "danceability": {
+            "max": 0.958,
+            "min": 0.159,
+            "mean": 0.5753209999999999
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.246,
+            "mean": 0.714817
+        },
+        "loudness": {
+            "max": 0.153,
+            "min": -17.517,
+            "mean": -6.0498899999999995
+        },
+        "speechiness": {
+            "max": 0.77,
+            "min": 0.0255,
+            "mean": 0.097296
+        },
+        "acousticness": {
+            "max": 0.941,
+            "min": 1.52e-05,
+            "mean": 0.12244078619999998
+        },
+        "instrumentalness": {
+            "max": 0.949,
+            "min": 0.0,
+            "mean": 0.08852665393
+        },
+        "liveness": {
+            "max": 0.951,
+            "min": 0.027,
+            "mean": 0.18955020000000003
+        }
+    },
+    "dubstep": {
+        "popularity": {
+            "max": 73,
+            "min": 0,
+            "mean": 42.317
+        },
+        "danceability": {
+            "max": 0.894,
+            "min": 0.159,
+            "mean": 0.518087
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.285,
+            "mean": 0.758969
+        },
+        "loudness": {
+            "max": 0.91,
+            "min": -18.998,
+            "mean": -5.063413000000001
+        },
+        "speechiness": {
+            "max": 0.865,
+            "min": 0.0256,
+            "mean": 0.09038040000000001
+        },
+        "acousticness": {
+            "max": 0.941,
+            "min": 1.52e-05,
+            "mean": 0.1136410973
+        },
+        "instrumentalness": {
+            "max": 0.949,
+            "min": 0.0,
+            "mean": 0.09307878862999999
+        },
+        "liveness": {
+            "max": 0.951,
+            "min": 0.027,
+            "mean": 0.1996265
+        }
+    },
+    "edm": {
+        "popularity": {
+            "max": 98,
+            "min": 0,
+            "mean": 35.032
+        },
+        "danceability": {
+            "max": 0.912,
+            "min": 0.258,
+            "mean": 0.64822
+        },
+        "energy": {
+            "max": 0.992,
+            "min": 0.218,
+            "mean": 0.7561959999999999
+        },
+        "loudness": {
+            "max": 0.366,
+            "min": -24.843,
+            "mean": -5.280398
+        },
+        "speechiness": {
+            "max": 0.449,
+            "min": 0.0243,
+            "mean": 0.07038599999999999
+        },
+        "acousticness": {
+            "max": 0.766,
+            "min": 0.000152,
+            "mean": 0.114270248
+        },
+        "instrumentalness": {
+            "max": 0.984,
+            "min": 0.0,
+            "mean": 0.040052845249999997
+        },
+        "liveness": {
+            "max": 0.906,
+            "min": 0.0304,
+            "mean": 0.19296719999999998
+        }
+    },
+    "electro": {
+        "popularity": {
+            "max": 89,
+            "min": 0,
+            "mean": 36.075
+        },
+        "danceability": {
+            "max": 0.912,
+            "min": 0.258,
+            "mean": 0.651749
+        },
+        "energy": {
+            "max": 0.992,
+            "min": 0.126,
+            "mean": 0.665
+        },
+        "loudness": {
+            "max": 0.366,
+            "min": -14.604,
+            "mean": -6.126304
+        },
+        "speechiness": {
+            "max": 0.743,
+            "min": 0.0243,
+            "mean": 0.0794304
+        },
+        "acousticness": {
+            "max": 0.971,
+            "min": 0.00016,
+            "mean": 0.227599936
+        },
+        "instrumentalness": {
+            "max": 0.941,
+            "min": 0.0,
+            "mean": 0.037723350860000004
+        },
+        "liveness": {
+            "max": 0.906,
+            "min": 0.015,
+            "mean": 0.18501720000000002
+        }
+    },
+    "electronic": {
+        "popularity": {
+            "max": 84,
+            "min": 0,
+            "mean": 44.325
+        },
+        "danceability": {
+            "max": 0.954,
+            "min": 0.167,
+            "mean": 0.652945
+        },
+        "energy": {
+            "max": 0.997,
+            "min": 0.0259,
+            "mean": 0.6947523000000001
+        },
+        "loudness": {
+            "max": -0.166,
+            "min": -30.016,
+            "mean": -7.142963
+        },
+        "speechiness": {
+            "max": 0.687,
+            "min": 0.0234,
+            "mean": 0.08176779999999999
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 1.48e-05,
+            "mean": 0.17702646910000003
+        },
+        "instrumentalness": {
+            "max": 0.968,
+            "min": 0.0,
+            "mean": 0.24869727176
+        },
+        "liveness": {
+            "max": 0.962,
+            "min": 0.0217,
+            "mean": 0.19077629999999998
+        }
+    },
+    "emo": {
+        "popularity": {
+            "max": 87,
+            "min": 0,
+            "mean": 48.128
+        },
+        "danceability": {
+            "max": 0.967,
+            "min": 0.174,
+            "mean": 0.599321
+        },
+        "energy": {
+            "max": 0.996,
+            "min": 2.03e-05,
+            "mean": 0.6699669203
+        },
+        "loudness": {
+            "max": -1.161,
+            "min": -20.032,
+            "mean": -6.718621
+        },
+        "speechiness": {
+            "max": 0.914,
+            "min": 0.0232,
+            "mean": 0.1089572
+        },
+        "acousticness": {
+            "max": 0.994,
+            "min": 5.66e-06,
+            "mean": 0.19508066629999998
+        },
+        "instrumentalness": {
+            "max": 0.946,
+            "min": 0.0,
+            "mean": 0.03028117864
+        },
+        "liveness": {
+            "max": 0.982,
+            "min": 0.021,
+            "mean": 0.18373759999999997
+        }
+    },
+    "folk": {
+        "popularity": {
+            "max": 90,
+            "min": 0,
+            "mean": 38.006
+        },
+        "danceability": {
+            "max": 0.899,
+            "min": 0.132,
+            "mean": 0.558514
+        },
+        "energy": {
+            "max": 0.972,
+            "min": 0.0242,
+            "mean": 0.545807
+        },
+        "loudness": {
+            "max": -1.145,
+            "min": -22.703,
+            "mean": -9.032255000000001
+        },
+        "speechiness": {
+            "max": 0.893,
+            "min": 0.0226,
+            "mean": 0.0587055
+        },
+        "acousticness": {
+            "max": 0.995,
+            "min": 0.000329,
+            "mean": 0.47533213300000005
+        },
+        "instrumentalness": {
+            "max": 0.969,
+            "min": 0.0,
+            "mean": 0.03767461184
+        },
+        "liveness": {
+            "max": 0.984,
+            "min": 0.0188,
+            "mean": 0.1761066
+        }
+    },
+    "forro": {
+        "popularity": {
+            "max": 62,
+            "min": 36,
+            "mean": 41.826
+        },
+        "danceability": {
+            "max": 0.947,
+            "min": 0.292,
+            "mean": 0.649776
+        },
+        "energy": {
+            "max": 0.985,
+            "min": 0.326,
+            "mean": 0.789526
+        },
+        "loudness": {
+            "max": -1.145,
+            "min": -19.12,
+            "mean": -5.1222010000000004
+        },
+        "speechiness": {
+            "max": 0.389,
+            "min": 0.0241,
+            "mean": 0.0571891
+        },
+        "acousticness": {
+            "max": 0.911,
+            "min": 0.00511,
+            "mean": 0.39757555
+        },
+        "instrumentalness": {
+            "max": 0.426,
+            "min": 0.0,
+            "mean": 0.0012565736
+        },
+        "liveness": {
+            "max": 0.989,
+            "min": 0.0221,
+            "mean": 0.29497110000000004
+        }
+    },
+    "french": {
+        "popularity": {
+            "max": 79,
+            "min": 0,
+            "mean": 41.067
+        },
+        "danceability": {
+            "max": 0.97,
+            "min": 0.0908,
+            "mean": 0.6514675999999999
+        },
+        "energy": {
+            "max": 0.997,
+            "min": 0.00674,
+            "mean": 0.5949901999999999
+        },
+        "loudness": {
+            "max": -0.181,
+            "min": -36.7,
+            "mean": -8.850678
+        },
+        "speechiness": {
+            "max": 0.826,
+            "min": 0.0256,
+            "mean": 0.1266466
+        },
+        "acousticness": {
+            "max": 0.995,
+            "min": 2.6e-06,
+            "mean": 0.34971259679
+        },
+        "instrumentalness": {
+            "max": 0.974,
+            "min": 0.0,
+            "mean": 0.15883940872
+        },
+        "liveness": {
+            "max": 0.975,
+            "min": 0.0167,
+            "mean": 0.1744812
+        }
+    },
+    "funk": {
+        "popularity": {
+            "max": 89,
+            "min": 0,
+            "mean": 32.322
+        },
+        "danceability": {
+            "max": 0.965,
+            "min": 0.218,
+            "mean": 0.678184
+        },
+        "energy": {
+            "max": 0.988,
+            "min": 0.134,
+            "mean": 0.632999
+        },
+        "loudness": {
+            "max": 1.821,
+            "min": -24.843,
+            "mean": -6.503946
+        },
+        "speechiness": {
+            "max": 0.899,
+            "min": 0.0236,
+            "mean": 0.15164850000000002
+        },
+        "acousticness": {
+            "max": 0.89,
+            "min": 1.21e-05,
+            "mean": 0.2996570331
+        },
+        "instrumentalness": {
+            "max": 0.768,
+            "min": 0.0,
+            "mean": 0.00779820822
+        },
+        "liveness": {
+            "max": 0.983,
+            "min": 0.0179,
+            "mean": 0.18055690000000002
+        }
+    },
+    "garage": {
+        "popularity": {
+            "max": 92,
+            "min": 0,
+            "mean": 40.933
+        },
+        "danceability": {
+            "max": 0.923,
+            "min": 0.0824,
+            "mean": 0.4842644
+        },
+        "energy": {
+            "max": 0.995,
+            "min": 0.154,
+            "mean": 0.74435
+        },
+        "loudness": {
+            "max": 2.574,
+            "min": -20.207,
+            "mean": -6.553585999999999
+        },
+        "speechiness": {
+            "max": 0.918,
+            "min": 0.0238,
+            "mean": 0.0659337
+        },
+        "acousticness": {
+            "max": 0.992,
+            "min": 1.36e-06,
+            "mean": 0.16750723035999998
+        },
+        "instrumentalness": {
+            "max": 0.987,
+            "min": 0.0,
+            "mean": 0.18986973912
+        },
+        "liveness": {
+            "max": 0.949,
+            "min": 0.0136,
+            "mean": 0.2126866
+        }
+    },
+    "german": {
+        "popularity": {
+            "max": 84,
+            "min": 0,
+            "mean": 26.751
+        },
+        "danceability": {
+            "max": 0.965,
+            "min": 0.0588,
+            "mean": 0.5243375000000001
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.00108,
+            "mean": 0.53171768
+        },
+        "loudness": {
+            "max": -0.25,
+            "min": -42.044,
+            "mean": -11.318736000000001
+        },
+        "speechiness": {
+            "max": 0.866,
+            "min": 0.0243,
+            "mean": 0.0975087
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 8.57e-06,
+            "mean": 0.38183399837000004
+        },
+        "instrumentalness": {
+            "max": 0.987,
+            "min": 0.0,
+            "mean": 0.28890127507
+        },
+        "liveness": {
+            "max": 0.983,
+            "min": 0.024,
+            "mean": 0.1963818
+        }
+    },
+    "gospel": {
+        "popularity": {
+            "max": 63,
+            "min": 0,
+            "mean": 41.639
+        },
+        "danceability": {
+            "max": 0.842,
+            "min": 0.134,
+            "mean": 0.473298
+        },
+        "energy": {
+            "max": 0.99,
+            "min": 0.0494,
+            "mean": 0.5762564
+        },
+        "loudness": {
+            "max": -1.721,
+            "min": -18.767,
+            "mean": -7.195495000000001
+        },
+        "speechiness": {
+            "max": 0.395,
+            "min": 0.023,
+            "mean": 0.0412708
+        },
+        "acousticness": {
+            "max": 0.967,
+            "min": 0.000172,
+            "mean": 0.37689054299999997
+        },
+        "instrumentalness": {
+            "max": 0.667,
+            "min": 0.0,
+            "mean": 0.00330670977
+        },
+        "liveness": {
+            "max": 0.989,
+            "min": 0.046,
+            "mean": 0.2986686
+        }
+    },
+    "goth": {
+        "popularity": {
+            "max": 67,
+            "min": 0,
+            "mean": 28.913
+        },
+        "danceability": {
+            "max": 0.928,
+            "min": 0.109,
+            "mean": 0.478875
+        },
+        "energy": {
+            "max": 0.996,
+            "min": 2.02e-05,
+            "mean": 0.7409699202000001
+        },
+        "loudness": {
+            "max": -0.866,
+            "min": -22.014,
+            "mean": -7.161212
+        },
+        "speechiness": {
+            "max": 0.529,
+            "min": 0.0238,
+            "mean": 0.0730923
+        },
+        "acousticness": {
+            "max": 0.977,
+            "min": 1.92e-06,
+            "mean": 0.16407584244
+        },
+        "instrumentalness": {
+            "max": 0.97,
+            "min": 0.0,
+            "mean": 0.11941419645000001
+        },
+        "liveness": {
+            "max": 0.992,
+            "min": 0.0363,
+            "mean": 0.23035720000000004
+        }
+    },
+    "grindcore": {
+        "popularity": {
+            "max": 46,
+            "min": 0,
+            "mean": 14.625
+        },
+        "danceability": {
+            "max": 0.604,
+            "min": 0.0588,
+            "mean": 0.2718537
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.254,
+            "mean": 0.924201
+        },
+        "loudness": {
+            "max": -0.921,
+            "min": -18.737,
+            "mean": -6.238013
+        },
+        "speechiness": {
+            "max": 0.762,
+            "min": 0.0322,
+            "mean": 0.1374715
+        },
+        "acousticness": {
+            "max": 0.571,
+            "min": 0.0,
+            "mean": 0.0086983045
+        },
+        "instrumentalness": {
+            "max": 0.995,
+            "min": 0.0,
+            "mean": 0.53845566901
+        },
+        "liveness": {
+            "max": 0.983,
+            "min": 0.0255,
+            "mean": 0.28123469999999995
+        }
+    },
+    "groove": {
+        "popularity": {
+            "max": 90,
+            "min": 0,
+            "mean": 37.825
+        },
+        "danceability": {
+            "max": 0.956,
+            "min": 0.106,
+            "mean": 0.58391
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.0761,
+            "mean": 0.7636218
+        },
+        "loudness": {
+            "max": -2.043,
+            "min": -17.472,
+            "mean": -6.408986
+        },
+        "speechiness": {
+            "max": 0.649,
+            "min": 0.0239,
+            "mean": 0.0707264
+        },
+        "acousticness": {
+            "max": 0.942,
+            "min": 2.6e-06,
+            "mean": 0.1316428056
+        },
+        "instrumentalness": {
+            "max": 0.95,
+            "min": 0.0,
+            "mean": 0.14554150927
+        },
+        "liveness": {
+            "max": 0.987,
+            "min": 0.0143,
+            "mean": 0.2311153
+        }
+    },
+    "grunge": {
+        "popularity": {
+            "max": 85,
+            "min": 0,
+            "mean": 49.594
+        },
+        "danceability": {
+            "max": 0.703,
+            "min": 0.142,
+            "mean": 0.457062
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.201,
+            "mean": 0.80329
+        },
+        "loudness": {
+            "max": -1.654,
+            "min": -19.308,
+            "mean": -5.66096
+        },
+        "speechiness": {
+            "max": 0.379,
+            "min": 0.023,
+            "mean": 0.0610544
+        },
+        "acousticness": {
+            "max": 0.879,
+            "min": 1.41e-06,
+            "mean": 0.05344148973
+        },
+        "instrumentalness": {
+            "max": 0.935,
+            "min": 0.0,
+            "mean": 0.03698348895
+        },
+        "liveness": {
+            "max": 0.994,
+            "min": 0.0212,
+            "mean": 0.22212610000000002
+        }
+    },
+    "guitar": {
+        "popularity": {
+            "max": 71,
+            "min": 0,
+            "mean": 29.526
+        },
+        "danceability": {
+            "max": 0.895,
+            "min": 0.0,
+            "mean": 0.5400373999999999
+        },
+        "energy": {
+            "max": 0.958,
+            "min": 2.03e-05,
+            "mean": 0.32499918590000004
+        },
+        "loudness": {
+            "max": -1.975,
+            "min": -34.991,
+            "mean": -14.050918000000001
+        },
+        "speechiness": {
+            "max": 0.407,
+            "min": 0.0,
+            "mean": 0.0514369
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 1.1e-05,
+            "mean": 0.773052655
+        },
+        "instrumentalness": {
+            "max": 0.997,
+            "min": 0.0,
+            "mean": 0.5161544192899999
+        },
+        "liveness": {
+            "max": 0.975,
+            "min": 0.0285,
+            "mean": 0.1496743
+        }
+    },
+    "happy": {
+        "popularity": {
+            "max": 65,
+            "min": 0,
+            "mean": 21.716
+        },
+        "danceability": {
+            "max": 0.903,
+            "min": 0.181,
+            "mean": 0.552847
+        },
+        "energy": {
+            "max": 1.0,
+            "min": 0.338,
+            "mean": 0.910971
+        },
+        "loudness": {
+            "max": 1.028,
+            "min": -16.759,
+            "mean": -5.416665
+        },
+        "speechiness": {
+            "max": 0.578,
+            "min": 0.028,
+            "mean": 0.1198609
+        },
+        "acousticness": {
+            "max": 0.683,
+            "min": 4.91e-06,
+            "mean": 0.05724352690000001
+        },
+        "instrumentalness": {
+            "max": 0.979,
+            "min": 0.0,
+            "mean": 0.26364107856999996
+        },
+        "liveness": {
+            "max": 0.994,
+            "min": 0.0162,
+            "mean": 0.28414280000000003
+        }
+    },
+    "hard-rock": {
+        "popularity": {
+            "max": 88,
+            "min": 0,
+            "mean": 42.775
+        },
+        "danceability": {
+            "max": 0.854,
+            "min": 0.128,
+            "mean": 0.48225
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.134,
+            "mean": 0.7950389999999999
+        },
+        "loudness": {
+            "max": 1.023,
+            "min": -18.492,
+            "mean": -6.747002
+        },
+        "speechiness": {
+            "max": 0.464,
+            "min": 0.0233,
+            "mean": 0.0664507
+        },
+        "acousticness": {
+            "max": 0.867,
+            "min": 1.47e-06,
+            "mean": 0.09038445053
+        },
+        "instrumentalness": {
+            "max": 0.961,
+            "min": 0.0,
+            "mean": 0.049617118509999995
+        },
+        "liveness": {
+            "max": 0.99,
+            "min": 0.0226,
+            "mean": 0.22125999999999998
+        }
+    },
+    "hardcore": {
+        "popularity": {
+            "max": 80,
+            "min": 0,
+            "mean": 36.105
+        },
+        "danceability": {
+            "max": 0.958,
+            "min": 0.129,
+            "mean": 0.5464110000000001
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.153,
+            "mean": 0.842453
+        },
+        "loudness": {
+            "max": 1.023,
+            "min": -20.343,
+            "mean": -5.776464
+        },
+        "speechiness": {
+            "max": 0.678,
+            "min": 0.0265,
+            "mean": 0.14935430000000002
+        },
+        "acousticness": {
+            "max": 0.737,
+            "min": 1.36e-06,
+            "mean": 0.06491318171
+        },
+        "instrumentalness": {
+            "max": 0.981,
+            "min": 0.0,
+            "mean": 0.06889598401000001
+        },
+        "liveness": {
+            "max": 0.99,
+            "min": 0.0197,
+            "mean": 0.23517359999999998
+        }
+    },
+    "hardstyle": {
+        "popularity": {
+            "max": 70,
+            "min": 0,
+            "mean": 26.623
+        },
+        "danceability": {
+            "max": 0.891,
+            "min": 0.223,
+            "mean": 0.5392290000000001
+        },
+        "energy": {
+            "max": 1.0,
+            "min": 0.565,
+            "mean": 0.901246
+        },
+        "loudness": {
+            "max": -0.093,
+            "min": -13.049,
+            "mean": -4.345983
+        },
+        "speechiness": {
+            "max": 0.567,
+            "min": 0.0275,
+            "mean": 0.12242399999999999
+        },
+        "acousticness": {
+            "max": 0.548,
+            "min": 2.32e-05,
+            "mean": 0.05113822330000001
+        },
+        "instrumentalness": {
+            "max": 0.958,
+            "min": 0.0,
+            "mean": 0.14268751914
+        },
+        "liveness": {
+            "max": 0.972,
+            "min": 0.0145,
+            "mean": 0.25707460000000004
+        }
+    },
+    "heavy-metal": {
+        "popularity": {
+            "max": 62,
+            "min": 0,
+            "mean": 26.226
+        },
+        "danceability": {
+            "max": 0.681,
+            "min": 0.0867,
+            "mean": 0.42849970000000004
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.253,
+            "mean": 0.8740030000000001
+        },
+        "loudness": {
+            "max": -0.795,
+            "min": -16.702,
+            "mean": -5.756366
+        },
+        "speechiness": {
+            "max": 0.419,
+            "min": 0.0232,
+            "mean": 0.07455699999999998
+        },
+        "acousticness": {
+            "max": 0.601,
+            "min": 1.62e-06,
+            "mean": 0.014967978009999999
+        },
+        "instrumentalness": {
+            "max": 0.963,
+            "min": 0.0,
+            "mean": 0.08255638091
+        },
+        "liveness": {
+            "max": 0.986,
+            "min": 0.0248,
+            "mean": 0.2795502
+        }
+    },
+    "hip-hop": {
+        "popularity": {
+            "max": 99,
+            "min": 0,
+            "mean": 37.759
+        },
+        "danceability": {
+            "max": 0.964,
+            "min": 0.329,
+            "mean": 0.736154
+        },
+        "energy": {
+            "max": 0.994,
+            "min": 0.298,
+            "mean": 0.68253
+        },
+        "loudness": {
+            "max": -0.079,
+            "min": -15.918,
+            "mean": -5.981619
+        },
+        "speechiness": {
+            "max": 0.621,
+            "min": 0.0241,
+            "mean": 0.1303534
+        },
+        "acousticness": {
+            "max": 0.857,
+            "min": 0.000193,
+            "mean": 0.19417496299999998
+        },
+        "instrumentalness": {
+            "max": 0.912,
+            "min": 0.0,
+            "mean": 0.0109065493
+        },
+        "liveness": {
+            "max": 0.922,
+            "min": 0.0226,
+            "mean": 0.1926446
+        }
+    },
+    "honky-tonk": {
+        "popularity": {
+            "max": 56,
+            "min": 9,
+            "mean": 16.355
+        },
+        "danceability": {
+            "max": 0.851,
+            "min": 0.24,
+            "mean": 0.5712229999999999
+        },
+        "energy": {
+            "max": 0.977,
+            "min": 0.0541,
+            "mean": 0.36695690000000003
+        },
+        "loudness": {
+            "max": -3.274,
+            "min": -21.463,
+            "mean": -11.761584000000001
+        },
+        "speechiness": {
+            "max": 0.183,
+            "min": 0.0232,
+            "mean": 0.037221899999999995
+        },
+        "acousticness": {
+            "max": 0.994,
+            "min": 1.38e-05,
+            "mean": 0.7120060718
+        },
+        "instrumentalness": {
+            "max": 0.965,
+            "min": 0.0,
+            "mean": 0.05709471099
+        },
+        "liveness": {
+            "max": 0.977,
+            "min": 0.0296,
+            "mean": 0.1904161
+        }
+    },
+    "house": {
+        "popularity": {
+            "max": 90,
+            "min": 0,
+            "mean": 34.156
+        },
+        "danceability": {
+            "max": 0.953,
+            "min": 0.32,
+            "mean": 0.6685340000000001
+        },
+        "energy": {
+            "max": 0.992,
+            "min": 0.218,
+            "mean": 0.755083
+        },
+        "loudness": {
+            "max": 0.366,
+            "min": -24.843,
+            "mean": -5.263968000000001
+        },
+        "speechiness": {
+            "max": 0.432,
+            "min": 0.0243,
+            "mean": 0.0693883
+        },
+        "acousticness": {
+            "max": 0.7,
+            "min": 0.000152,
+            "mean": 0.108655858
+        },
+        "instrumentalness": {
+            "max": 0.952,
+            "min": 0.0,
+            "mean": 0.03799165293
+        },
+        "liveness": {
+            "max": 0.906,
+            "min": 0.0282,
+            "mean": 0.18798489999999998
+        }
+    },
+    "idm": {
+        "popularity": {
+            "max": 70,
+            "min": 0,
+            "mean": 15.766
+        },
+        "danceability": {
+            "max": 0.903,
+            "min": 0.0602,
+            "mean": 0.5278375
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.00129,
+            "mean": 0.5553989500000001
+        },
+        "loudness": {
+            "max": 1.343,
+            "min": -32.661,
+            "mean": -12.408888999999999
+        },
+        "speechiness": {
+            "max": 0.939,
+            "min": 0.0259,
+            "mean": 0.0754502
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 1.84e-06,
+            "mean": 0.37767211412
+        },
+        "instrumentalness": {
+            "max": 0.999,
+            "min": 0.0,
+            "mean": 0.67493109684
+        },
+        "liveness": {
+            "max": 0.943,
+            "min": 0.0337,
+            "mean": 0.16831770000000001
+        }
+    },
+    "indian": {
+        "popularity": {
+            "max": 88,
+            "min": 0,
+            "mean": 49.539
+        },
+        "danceability": {
+            "max": 0.921,
+            "min": 0.191,
+            "mean": 0.592273
+        },
+        "energy": {
+            "max": 0.987,
+            "min": 0.0441,
+            "mean": 0.567121
+        },
+        "loudness": {
+            "max": -1.121,
+            "min": -25.631,
+            "mean": -8.850844
+        },
+        "speechiness": {
+            "max": 0.5,
+            "min": 0.0231,
+            "mean": 0.0721358
+        },
+        "acousticness": {
+            "max": 0.992,
+            "min": 0.000305,
+            "mean": 0.48491906900000004
+        },
+        "instrumentalness": {
+            "max": 0.984,
+            "min": 0.0,
+            "mean": 0.03940822574
+        },
+        "liveness": {
+            "max": 0.949,
+            "min": 0.0188,
+            "mean": 0.1729221
+        }
+    },
+    "indie": {
+        "popularity": {
+            "max": 92,
+            "min": 0,
+            "mean": 38.895
+        },
+        "danceability": {
+            "max": 0.953,
+            "min": 0.112,
+            "mean": 0.5872719999999999
+        },
+        "energy": {
+            "max": 0.978,
+            "min": 0.0167,
+            "mean": 0.5561919000000001
+        },
+        "loudness": {
+            "max": -1.661,
+            "min": -24.639,
+            "mean": -8.285909
+        },
+        "speechiness": {
+            "max": 0.515,
+            "min": 0.0238,
+            "mean": 0.0626551
+        },
+        "acousticness": {
+            "max": 0.992,
+            "min": 7.53e-06,
+            "mean": 0.38038630682999997
+        },
+        "instrumentalness": {
+            "max": 0.984,
+            "min": 0.0,
+            "mean": 0.05280611277
+        },
+        "liveness": {
+            "max": 0.958,
+            "min": 0.0251,
+            "mean": 0.16036059999999996
+        }
+    },
+    "indie-pop": {
+        "popularity": {
+            "max": 88,
+            "min": 0,
+            "mean": 40.657
+        },
+        "danceability": {
+            "max": 0.953,
+            "min": 0.174,
+            "mean": 0.60437
+        },
+        "energy": {
+            "max": 0.981,
+            "min": 0.0167,
+            "mean": 0.5611395
+        },
+        "loudness": {
+            "max": -1.661,
+            "min": -24.639,
+            "mean": -7.996607
+        },
+        "speechiness": {
+            "max": 0.515,
+            "min": 0.0238,
+            "mean": 0.0658611
+        },
+        "acousticness": {
+            "max": 0.99,
+            "min": 7.53e-06,
+            "mean": 0.37235657733000005
+        },
+        "instrumentalness": {
+            "max": 0.962,
+            "min": 0.0,
+            "mean": 0.041932595339999996
+        },
+        "liveness": {
+            "max": 0.816,
+            "min": 0.0251,
+            "mean": 0.1674189
+        }
+    },
+    "industrial": {
+        "popularity": {
+            "max": 77,
+            "min": 0,
+            "mean": 31.041
+        },
+        "danceability": {
+            "max": 0.881,
+            "min": 0.103,
+            "mean": 0.5304159999999999
+        },
+        "energy": {
+            "max": 1.0,
+            "min": 0.0513,
+            "mean": 0.8617453
+        },
+        "loudness": {
+            "max": 0.915,
+            "min": -20.547,
+            "mean": -6.024399
+        },
+        "speechiness": {
+            "max": 0.578,
+            "min": 0.0251,
+            "mean": 0.0868167
+        },
+        "acousticness": {
+            "max": 0.979,
+            "min": 1.45e-06,
+            "mean": 0.036727526870000006
+        },
+        "instrumentalness": {
+            "max": 0.955,
+            "min": 0.0,
+            "mean": 0.19203051922999997
+        },
+        "liveness": {
+            "max": 0.976,
+            "min": 0.0204,
+            "mean": 0.2329869
+        }
+    },
+    "iranian": {
+        "popularity": {
+            "max": 33,
+            "min": 0,
+            "mean": 2.21
+        },
+        "danceability": {
+            "max": 0.753,
+            "min": 0.0,
+            "mean": 0.30068599999999995
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 2.02e-05,
+            "mean": 0.5458459025999999
+        },
+        "loudness": {
+            "max": 3.156,
+            "min": -38.409,
+            "mean": -13.080343000000001
+        },
+        "speechiness": {
+            "max": 0.918,
+            "min": 0.0,
+            "mean": 0.09101410000000001
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 1.12e-06,
+            "mean": 0.41092916465
+        },
+        "instrumentalness": {
+            "max": 0.999,
+            "min": 0.0,
+            "mean": 0.5898483816600001
+        },
+        "liveness": {
+            "max": 0.985,
+            "min": 0.0429,
+            "mean": 0.1920508
+        }
+    },
+    "j-dance": {
+        "popularity": {
+            "max": 77,
+            "min": 0,
+            "mean": 26.656
+        },
+        "danceability": {
+            "max": 0.975,
+            "min": 0.259,
+            "mean": 0.680557
+        },
+        "energy": {
+            "max": 0.993,
+            "min": 0.0826,
+            "mean": 0.7037546
+        },
+        "loudness": {
+            "max": -0.308,
+            "min": -18.982,
+            "mean": -6.0590399999999995
+        },
+        "speechiness": {
+            "max": 0.861,
+            "min": 0.0265,
+            "mean": 0.2204054
+        },
+        "acousticness": {
+            "max": 0.995,
+            "min": 1.89e-05,
+            "mean": 0.2304690886
+        },
+        "instrumentalness": {
+            "max": 0.937,
+            "min": 0.0,
+            "mean": 0.030670183809999998
+        },
+        "liveness": {
+            "max": 0.931,
+            "min": 0.0278,
+            "mean": 0.18385
+        }
+    },
+    "j-idol": {
+        "popularity": {
+            "max": 65,
+            "min": 0,
+            "mean": 24.707
+        },
+        "danceability": {
+            "max": 0.812,
+            "min": 0.204,
+            "mean": 0.548819
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.0973,
+            "mean": 0.8686773000000001
+        },
+        "loudness": {
+            "max": 0.945,
+            "min": -19.59,
+            "mean": -3.771215
+        },
+        "speechiness": {
+            "max": 0.484,
+            "min": 0.0234,
+            "mean": 0.06948339999999999
+        },
+        "acousticness": {
+            "max": 0.94,
+            "min": 2.53e-06,
+            "mean": 0.15150795199
+        },
+        "instrumentalness": {
+            "max": 0.987,
+            "min": 0.0,
+            "mean": 0.03723634038
+        },
+        "liveness": {
+            "max": 0.992,
+            "min": 0.0178,
+            "mean": 0.2293279
+        }
+    },
+    "j-pop": {
+        "popularity": {
+            "max": 85,
+            "min": 0,
+            "mean": 41.143
+        },
+        "danceability": {
+            "max": 0.872,
+            "min": 0.174,
+            "mean": 0.551678
+        },
+        "energy": {
+            "max": 0.995,
+            "min": 0.0378,
+            "mean": 0.6796042
+        },
+        "loudness": {
+            "max": 1.023,
+            "min": -22.655,
+            "mean": -6.279941000000001
+        },
+        "speechiness": {
+            "max": 0.419,
+            "min": 0.0227,
+            "mean": 0.059367
+        },
+        "acousticness": {
+            "max": 0.986,
+            "min": 5.82e-06,
+            "mean": 0.28208791462
+        },
+        "instrumentalness": {
+            "max": 0.933,
+            "min": 0.0,
+            "mean": 0.011578810799999999
+        },
+        "liveness": {
+            "max": 0.858,
+            "min": 0.0233,
+            "mean": 0.1985291
+        }
+    },
+    "j-rock": {
+        "popularity": {
+            "max": 77,
+            "min": 0,
+            "mean": 40.664
+        },
+        "danceability": {
+            "max": 0.892,
+            "min": 0.173,
+            "mean": 0.509069
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.101,
+            "mean": 0.7606839999999999
+        },
+        "loudness": {
+            "max": 1.023,
+            "min": -22.768,
+            "mean": -5.693655000000001
+        },
+        "speechiness": {
+            "max": 0.419,
+            "min": 0.0223,
+            "mean": 0.0644018
+        },
+        "acousticness": {
+            "max": 0.974,
+            "min": 5.82e-06,
+            "mean": 0.16859578103
+        },
+        "instrumentalness": {
+            "max": 0.913,
+            "min": 0.0,
+            "mean": 0.0234557353
+        },
+        "liveness": {
+            "max": 0.99,
+            "min": 0.0114,
+            "mean": 0.2236261
+        }
+    },
+    "jazz": {
+        "popularity": {
+            "max": 83,
+            "min": 0,
+            "mean": 13.628
+        },
+        "danceability": {
+            "max": 0.859,
+            "min": 0.0,
+            "mean": 0.5099750000000001
+        },
+        "energy": {
+            "max": 0.938,
+            "min": 0.00756,
+            "mean": 0.35295443
+        },
+        "loudness": {
+            "max": -3.144,
+            "min": -34.657,
+            "mean": -11.578764999999999
+        },
+        "speechiness": {
+            "max": 0.905,
+            "min": 0.0,
+            "mean": 0.055013
+        },
+        "acousticness": {
+            "max": 0.995,
+            "min": 0.000867,
+            "mean": 0.7158157070000001
+        },
+        "instrumentalness": {
+            "max": 0.972,
+            "min": 0.0,
+            "mean": 0.07956107896999999
+        },
+        "liveness": {
+            "max": 0.959,
+            "min": 0.0346,
+            "mean": 0.1700251
+        }
+    },
+    "k-pop": {
+        "popularity": {
+            "max": 88,
+            "min": 0,
+            "mean": 56.896
+        },
+        "danceability": {
+            "max": 0.935,
+            "min": 0.206,
+            "mean": 0.647732
+        },
+        "energy": {
+            "max": 0.993,
+            "min": 0.166,
+            "mean": 0.675654
+        },
+        "loudness": {
+            "max": -0.173,
+            "min": -18.064,
+            "mean": -6.470775
+        },
+        "speechiness": {
+            "max": 0.889,
+            "min": 0.0238,
+            "mean": 0.08802449999999999
+        },
+        "acousticness": {
+            "max": 0.981,
+            "min": 0.000253,
+            "mean": 0.292968194
+        },
+        "instrumentalness": {
+            "max": 0.941,
+            "min": 0.0,
+            "mean": 0.00982844532
+        },
+        "liveness": {
+            "max": 0.923,
+            "min": 0.0202,
+            "mean": 0.1762963
+        }
+    },
+    "kids": {
+        "popularity": {
+            "max": 63,
+            "min": 0,
+            "mean": 14.888
+        },
+        "danceability": {
+            "max": 0.984,
+            "min": 0.341,
+            "mean": 0.778906
+        },
+        "energy": {
+            "max": 0.988,
+            "min": 0.0612,
+            "mean": 0.6131286
+        },
+        "loudness": {
+            "max": -1.953,
+            "min": -25.318,
+            "mean": -8.119188999999999
+        },
+        "speechiness": {
+            "max": 0.957,
+            "min": 0.0256,
+            "mean": 0.15284560000000003
+        },
+        "acousticness": {
+            "max": 0.988,
+            "min": 2.36e-05,
+            "mean": 0.2386349012
+        },
+        "instrumentalness": {
+            "max": 0.954,
+            "min": 0.0,
+            "mean": 0.019720388399999997
+        },
+        "liveness": {
+            "max": 0.966,
+            "min": 0.0176,
+            "mean": 0.1720335
+        }
+    },
+    "latin": {
+        "popularity": {
+            "max": 98,
+            "min": 0,
+            "mean": 8.297
+        },
+        "danceability": {
+            "max": 0.924,
+            "min": 0.223,
+            "mean": 0.721902
+        },
+        "energy": {
+            "max": 0.974,
+            "min": 0.215,
+            "mean": 0.7270800000000001
+        },
+        "loudness": {
+            "max": -1.223,
+            "min": -20.331,
+            "mean": -5.263596000000001
+        },
+        "speechiness": {
+            "max": 0.485,
+            "min": 0.024,
+            "mean": 0.0931231
+        },
+        "acousticness": {
+            "max": 0.938,
+            "min": 0.000371,
+            "mean": 0.183373435
+        },
+        "instrumentalness": {
+            "max": 0.934,
+            "min": 0.0,
+            "mean": 0.00917700209
+        },
+        "liveness": {
+            "max": 0.962,
+            "min": 0.015,
+            "mean": 0.1742917
+        }
+    },
+    "latino": {
+        "popularity": {
+            "max": 98,
+            "min": 0,
+            "mean": 25.656
+        },
+        "danceability": {
+            "max": 0.971,
+            "min": 0.294,
+            "mean": 0.757057
+        },
+        "energy": {
+            "max": 0.967,
+            "min": 0.0715,
+            "mean": 0.7317965
+        },
+        "loudness": {
+            "max": -0.722,
+            "min": -23.231,
+            "mean": -5.176923
+        },
+        "speechiness": {
+            "max": 0.642,
+            "min": 0.0254,
+            "mean": 0.1144216
+        },
+        "acousticness": {
+            "max": 0.98,
+            "min": 0.00127,
+            "mean": 0.17220078
+        },
+        "instrumentalness": {
+            "max": 0.906,
+            "min": 0.0,
+            "mean": 0.00806694413
+        },
+        "liveness": {
+            "max": 0.97,
+            "min": 0.015,
+            "mean": 0.1731817
+        }
+    },
+    "malay": {
+        "popularity": {
+            "max": 72,
+            "min": 0,
+            "mean": 30.358
+        },
+        "danceability": {
+            "max": 0.948,
+            "min": 0.256,
+            "mean": 0.628617
+        },
+        "energy": {
+            "max": 0.993,
+            "min": 0.0598,
+            "mean": 0.5783966
+        },
+        "loudness": {
+            "max": 1.416,
+            "min": -21.798,
+            "mean": -8.373605
+        },
+        "speechiness": {
+            "max": 0.745,
+            "min": 0.0221,
+            "mean": 0.0809715
+        },
+        "acousticness": {
+            "max": 0.994,
+            "min": 0.000377,
+            "mean": 0.404123097
+        },
+        "instrumentalness": {
+            "max": 0.876,
+            "min": 0.0,
+            "mean": 0.008851221449999998
+        },
+        "liveness": {
+            "max": 0.987,
+            "min": 0.0276,
+            "mean": 0.1731763
+        }
+    },
+    "mandopop": {
+        "popularity": {
+            "max": 71,
+            "min": 0,
+            "mean": 45.025
+        },
+        "danceability": {
+            "max": 0.862,
+            "min": 0.2,
+            "mean": 0.5465319999999999
+        },
+        "energy": {
+            "max": 0.944,
+            "min": 0.054,
+            "mean": 0.4984339
+        },
+        "loudness": {
+            "max": -1.784,
+            "min": -21.221,
+            "mean": -8.176785
+        },
+        "speechiness": {
+            "max": 0.455,
+            "min": 0.0234,
+            "mean": 0.039487499999999995
+        },
+        "acousticness": {
+            "max": 0.977,
+            "min": 7.66e-05,
+            "mean": 0.48028830559999997
+        },
+        "instrumentalness": {
+            "max": 0.427,
+            "min": 0.0,
+            "mean": 0.00370949509
+        },
+        "liveness": {
+            "max": 0.991,
+            "min": 0.041,
+            "mean": 0.1593046
+        }
+    },
+    "metal": {
+        "popularity": {
+            "max": 88,
+            "min": 0,
+            "mean": 43.705
+        },
+        "danceability": {
+            "max": 0.94,
+            "min": 0.112,
+            "mean": 0.46428800000000003
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.134,
+            "mean": 0.840273
+        },
+        "loudness": {
+            "max": 1.023,
+            "min": -15.762,
+            "mean": -5.425439
+        },
+        "speechiness": {
+            "max": 0.419,
+            "min": 0.0238,
+            "mean": 0.07026059999999999
+        },
+        "acousticness": {
+            "max": 0.665,
+            "min": 3.19e-06,
+            "mean": 0.037084863339999996
+        },
+        "instrumentalness": {
+            "max": 0.948,
+            "min": 0.0,
+            "mean": 0.06460309569
+        },
+        "liveness": {
+            "max": 0.97,
+            "min": 0.0212,
+            "mean": 0.20515809999999998
+        }
+    },
+    "metalcore": {
+        "popularity": {
+            "max": 81,
+            "min": 0,
+            "mean": 43.477
+        },
+        "danceability": {
+            "max": 0.855,
+            "min": 0.105,
+            "mean": 0.4238
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.385,
+            "mean": 0.914485
+        },
+        "loudness": {
+            "max": 1.023,
+            "min": -12.232,
+            "mean": -4.457693999999999
+        },
+        "speechiness": {
+            "max": 0.511,
+            "min": 0.0247,
+            "mean": 0.11025980000000002
+        },
+        "acousticness": {
+            "max": 0.705,
+            "min": 2.25e-06,
+            "mean": 0.01028573078
+        },
+        "instrumentalness": {
+            "max": 0.953,
+            "min": 0.0,
+            "mean": 0.045694750209999996
+        },
+        "liveness": {
+            "max": 0.984,
+            "min": 0.0273,
+            "mean": 0.25818040000000003
+        }
+    },
+    "minimal-techno": {
+        "popularity": {
+            "max": 68,
+            "min": 0,
+            "mean": 34.022
+        },
+        "danceability": {
+            "max": 0.982,
+            "min": 0.313,
+            "mean": 0.729395
+        },
+        "energy": {
+            "max": 0.995,
+            "min": 0.176,
+            "mean": 0.680272
+        },
+        "loudness": {
+            "max": -2.834,
+            "min": -23.885,
+            "mean": -9.771709999999999
+        },
+        "speechiness": {
+            "max": 0.497,
+            "min": 0.0263,
+            "mean": 0.06257470000000001
+        },
+        "acousticness": {
+            "max": 0.829,
+            "min": 4.71e-06,
+            "mean": 0.07093270167
+        },
+        "instrumentalness": {
+            "max": 0.975,
+            "min": 0.0,
+            "mean": 0.74453848094
+        },
+        "liveness": {
+            "max": 0.91,
+            "min": 0.0186,
+            "mean": 0.13546320000000003
+        }
+    },
+    "mpb": {
+        "popularity": {
+            "max": 66,
+            "min": 0,
+            "mean": 40.792
+        },
+        "danceability": {
+            "max": 0.93,
+            "min": 0.221,
+            "mean": 0.5740879999999999
+        },
+        "energy": {
+            "max": 0.967,
+            "min": 7.06e-05,
+            "mean": 0.5797871706000001
+        },
+        "loudness": {
+            "max": -2.578,
+            "min": -20.06,
+            "mean": -9.110408
+        },
+        "speechiness": {
+            "max": 0.489,
+            "min": 0.023,
+            "mean": 0.0565688
+        },
+        "acousticness": {
+            "max": 0.987,
+            "min": 0.000139,
+            "mean": 0.420858189
+        },
+        "instrumentalness": {
+            "max": 0.942,
+            "min": 0.0,
+            "mean": 0.015458908759999999
+        },
+        "liveness": {
+            "max": 0.992,
+            "min": 0.0226,
+            "mean": 0.33946390000000004
+        }
+    },
+    "new-age": {
+        "popularity": {
+            "max": 71,
+            "min": 0,
+            "mean": 29.065
+        },
+        "danceability": {
+            "max": 0.867,
+            "min": 0.0576,
+            "mean": 0.3484546
+        },
+        "energy": {
+            "max": 0.981,
+            "min": 0.00136,
+            "mean": 0.21450062
+        },
+        "loudness": {
+            "max": -4.639,
+            "min": -36.764,
+            "mean": -18.520463
+        },
+        "speechiness": {
+            "max": 0.483,
+            "min": 0.0228,
+            "mean": 0.0456587
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 0.000956,
+            "mean": 0.824022422
+        },
+        "instrumentalness": {
+            "max": 0.991,
+            "min": 0.0,
+            "mean": 0.7130209027900001
+        },
+        "liveness": {
+            "max": 0.987,
+            "min": 0.031,
+            "mean": 0.2004907
+        }
+    },
+    "opera": {
+        "popularity": {
+            "max": 67,
+            "min": 0,
+            "mean": 24.621
+        },
+        "danceability": {
+            "max": 0.699,
+            "min": 0.0,
+            "mean": 0.3135631
+        },
+        "energy": {
+            "max": 0.983,
+            "min": 0.00377,
+            "mean": 0.31705399999999995
+        },
+        "loudness": {
+            "max": -2.459,
+            "min": -40.046,
+            "mean": -13.575679000000001
+        },
+        "speechiness": {
+            "max": 0.537,
+            "min": 0.0,
+            "mean": 0.0464342
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 1.95e-06,
+            "mean": 0.79493148246
+        },
+        "instrumentalness": {
+            "max": 0.969,
+            "min": 0.0,
+            "mean": 0.16291521127
+        },
+        "liveness": {
+            "max": 0.987,
+            "min": 0.0384,
+            "mean": 0.21983340000000004
+        }
+    },
+    "pagode": {
+        "popularity": {
+            "max": 84,
+            "min": 0,
+            "mean": 44.298
+        },
+        "danceability": {
+            "max": 0.896,
+            "min": 0.269,
+            "mean": 0.577723
+        },
+        "energy": {
+            "max": 0.955,
+            "min": 0.181,
+            "mean": 0.7121230000000001
+        },
+        "loudness": {
+            "max": -1.314,
+            "min": -17.214,
+            "mean": -7.268763
+        },
+        "speechiness": {
+            "max": 0.582,
+            "min": 0.023,
+            "mean": 0.06278689999999999
+        },
+        "acousticness": {
+            "max": 0.92,
+            "min": 0.00166,
+            "mean": 0.5383721200000001
+        },
+        "instrumentalness": {
+            "max": 0.336,
+            "min": 0.0,
+            "mean": 0.0005658295
+        },
+        "liveness": {
+            "max": 1.0,
+            "min": 0.0371,
+            "mean": 0.5198638000000001
+        }
+    },
+    "party": {
+        "popularity": {
+            "max": 74,
+            "min": 0,
+            "mean": 20.982
+        },
+        "danceability": {
+            "max": 0.976,
+            "min": 0.318,
+            "mean": 0.667191
+        },
+        "energy": {
+            "max": 1.0,
+            "min": 0.111,
+            "mean": 0.8712369999999999
+        },
+        "loudness": {
+            "max": -0.108,
+            "min": -14.423,
+            "mean": -4.411870999999999
+        },
+        "speechiness": {
+            "max": 0.457,
+            "min": 0.0233,
+            "mean": 0.08734809999999998
+        },
+        "acousticness": {
+            "max": 0.786,
+            "min": 2.36e-05,
+            "mean": 0.09273522560000001
+        },
+        "instrumentalness": {
+            "max": 0.49,
+            "min": 0.0,
+            "mean": 0.00168788099
+        },
+        "liveness": {
+            "max": 0.987,
+            "min": 0.00925,
+            "mean": 0.28773885
+        }
+    },
+    "piano": {
+        "popularity": {
+            "max": 96,
+            "min": 0,
+            "mean": 45.273
+        },
+        "danceability": {
+            "max": 0.854,
+            "min": 0.0863,
+            "mean": 0.4550983
+        },
+        "energy": {
+            "max": 0.982,
+            "min": 0.000544,
+            "mean": 0.32010256400000003
+        },
+        "loudness": {
+            "max": -1.616,
+            "min": -43.957,
+            "mean": -17.013977999999998
+        },
+        "speechiness": {
+            "max": 0.508,
+            "min": 0.0241,
+            "mean": 0.0468513
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 3.82e-05,
+            "mean": 0.704978913
+        },
+        "instrumentalness": {
+            "max": 0.978,
+            "min": 0.0,
+            "mean": 0.5164099017200001
+        },
+        "liveness": {
+            "max": 0.993,
+            "min": 0.0368,
+            "mean": 0.1448621
+        }
+    },
+    "pop": {
+        "popularity": {
+            "max": 100,
+            "min": 0,
+            "mean": 47.576
+        },
+        "danceability": {
+            "max": 0.918,
+            "min": 0.206,
+            "mean": 0.630441
+        },
+        "energy": {
+            "max": 0.986,
+            "min": 0.114,
+            "mean": 0.6064369999999999
+        },
+        "loudness": {
+            "max": -1.1,
+            "min": -20.647,
+            "mean": -6.953969
+        },
+        "speechiness": {
+            "max": 0.505,
+            "min": 0.0232,
+            "mean": 0.0799752
+        },
+        "acousticness": {
+            "max": 0.983,
+            "min": 0.000185,
+            "mean": 0.34369250999999995
+        },
+        "instrumentalness": {
+            "max": 0.905,
+            "min": 0.0,
+            "mean": 0.009026303910000002
+        },
+        "liveness": {
+            "max": 0.766,
+            "min": 0.0211,
+            "mean": 0.15825579999999997
+        }
+    },
+    "pop-film": {
+        "popularity": {
+            "max": 80,
+            "min": 0,
+            "mean": 59.283
+        },
+        "danceability": {
+            "max": 0.879,
+            "min": 0.22,
+            "mean": 0.597146
+        },
+        "energy": {
+            "max": 0.99,
+            "min": 0.0899,
+            "mean": 0.6045618999999999
+        },
+        "loudness": {
+            "max": -0.155,
+            "min": -19.161,
+            "mean": -7.871622
+        },
+        "speechiness": {
+            "max": 0.422,
+            "min": 0.0231,
+            "mean": 0.06405699999999999
+        },
+        "acousticness": {
+            "max": 0.989,
+            "min": 0.000173,
+            "mean": 0.440695616
+        },
+        "instrumentalness": {
+            "max": 0.706,
+            "min": 0.0,
+            "mean": 0.00812373181
+        },
+        "liveness": {
+            "max": 0.946,
+            "min": 0.0251,
+            "mean": 0.166397
+        }
+    },
+    "power-pop": {
+        "popularity": {
+            "max": 81,
+            "min": 0,
+            "mean": 26.898
+        },
+        "danceability": {
+            "max": 0.811,
+            "min": 0.101,
+            "mean": 0.47341
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.142,
+            "mean": 0.801688
+        },
+        "loudness": {
+            "max": -0.858,
+            "min": -20.596,
+            "mean": -6.675975
+        },
+        "speechiness": {
+            "max": 0.444,
+            "min": 0.024,
+            "mean": 0.0579358
+        },
+        "acousticness": {
+            "max": 0.911,
+            "min": 1.27e-06,
+            "mean": 0.08551097744000001
+        },
+        "instrumentalness": {
+            "max": 0.948,
+            "min": 0.0,
+            "mean": 0.06388665366999999
+        },
+        "liveness": {
+            "max": 0.979,
+            "min": 0.0198,
+            "mean": 0.22324619999999998
+        }
+    },
+    "progressive-house": {
+        "popularity": {
+            "max": 89,
+            "min": 0,
+            "mean": 46.615
+        },
+        "danceability": {
+            "max": 0.912,
+            "min": 0.201,
+            "mean": 0.6239349999999999
+        },
+        "energy": {
+            "max": 0.993,
+            "min": 0.406,
+            "mean": 0.8133589999999999
+        },
+        "loudness": {
+            "max": 0.605,
+            "min": -13.304,
+            "mean": -5.421422000000001
+        },
+        "speechiness": {
+            "max": 0.83,
+            "min": 0.0268,
+            "mean": 0.0676695
+        },
+        "acousticness": {
+            "max": 0.571,
+            "min": 7.39e-06,
+            "mean": 0.06138703639
+        },
+        "instrumentalness": {
+            "max": 0.971,
+            "min": 0.0,
+            "mean": 0.20048227569
+        },
+        "liveness": {
+            "max": 0.956,
+            "min": 0.0239,
+            "mean": 0.2093309
+        }
+    },
+    "psych-rock": {
+        "popularity": {
+            "max": 82,
+            "min": 0,
+            "mean": 42.778
+        },
+        "danceability": {
+            "max": 0.855,
+            "min": 0.132,
+            "mean": 0.502554
+        },
+        "energy": {
+            "max": 0.988,
+            "min": 0.0193,
+            "mean": 0.5615028
+        },
+        "loudness": {
+            "max": -1.413,
+            "min": -29.867,
+            "mean": -9.984744999999998
+        },
+        "speechiness": {
+            "max": 0.571,
+            "min": 0.0237,
+            "mean": 0.0473149
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 3.97e-06,
+            "mean": 0.31522801724
+        },
+        "instrumentalness": {
+            "max": 0.959,
+            "min": 0.0,
+            "mean": 0.09181969097
+        },
+        "liveness": {
+            "max": 0.997,
+            "min": 0.0234,
+            "mean": 0.20263050000000002
+        }
+    },
+    "punk": {
+        "popularity": {
+            "max": 86,
+            "min": 0,
+            "mean": 38.291
+        },
+        "danceability": {
+            "max": 0.922,
+            "min": 0.108,
+            "mean": 0.49977799999999994
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.13,
+            "mean": 0.809673
+        },
+        "loudness": {
+            "max": -0.198,
+            "min": -18.054,
+            "mean": -5.727468999999999
+        },
+        "speechiness": {
+            "max": 0.44,
+            "min": 0.0232,
+            "mean": 0.064181
+        },
+        "acousticness": {
+            "max": 0.903,
+            "min": 1.37e-06,
+            "mean": 0.08912129745
+        },
+        "instrumentalness": {
+            "max": 0.896,
+            "min": 0.0,
+            "mean": 0.038885755370000004
+        },
+        "liveness": {
+            "max": 0.988,
+            "min": 0.021,
+            "mean": 0.2159331
+        }
+    },
+    "punk-rock": {
+        "popularity": {
+            "max": 82,
+            "min": 0,
+            "mean": 38.236
+        },
+        "danceability": {
+            "max": 0.922,
+            "min": 0.132,
+            "mean": 0.5073289999999999
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.13,
+            "mean": 0.80998
+        },
+        "loudness": {
+            "max": -0.734,
+            "min": -18.458,
+            "mean": -5.916501
+        },
+        "speechiness": {
+            "max": 0.44,
+            "min": 0.0232,
+            "mean": 0.0635081
+        },
+        "acousticness": {
+            "max": 0.919,
+            "min": 1.47e-06,
+            "mean": 0.08259563892
+        },
+        "instrumentalness": {
+            "max": 0.888,
+            "min": 0.0,
+            "mean": 0.03218837973000001
+        },
+        "liveness": {
+            "max": 0.988,
+            "min": 0.02,
+            "mean": 0.23666890000000002
+        }
+    },
+    "r-n-b": {
+        "popularity": {
+            "max": 90,
+            "min": 0,
+            "mean": 36.687
+        },
+        "danceability": {
+            "max": 0.907,
+            "min": 0.203,
+            "mean": 0.614388
+        },
+        "energy": {
+            "max": 0.989,
+            "min": 7.06e-05,
+            "mean": 0.6381296706
+        },
+        "loudness": {
+            "max": 0.681,
+            "min": -20.06,
+            "mean": -7.5394440000000005
+        },
+        "speechiness": {
+            "max": 0.924,
+            "min": 0.0233,
+            "mean": 0.0892185
+        },
+        "acousticness": {
+            "max": 0.962,
+            "min": 1.52e-05,
+            "mean": 0.3705621442
+        },
+        "instrumentalness": {
+            "max": 0.847,
+            "min": 0.0,
+            "mean": 0.009955657029999999
+        },
+        "liveness": {
+            "max": 0.989,
+            "min": 0.0226,
+            "mean": 0.26218309999999995
+        }
+    },
+    "reggae": {
+        "popularity": {
+            "max": 98,
+            "min": 0,
+            "mean": 20.63
+        },
+        "danceability": {
+            "max": 0.948,
+            "min": 0.315,
+            "mean": 0.7453309999999999
+        },
+        "energy": {
+            "max": 0.969,
+            "min": 0.256,
+            "mean": 0.725791
+        },
+        "loudness": {
+            "max": -0.387,
+            "min": -16.204,
+            "mean": -5.292395000000001
+        },
+        "speechiness": {
+            "max": 0.485,
+            "min": 0.025,
+            "mean": 0.11540539999999999
+        },
+        "acousticness": {
+            "max": 0.808,
+            "min": 0.000185,
+            "mean": 0.175950025
+        },
+        "instrumentalness": {
+            "max": 0.417,
+            "min": 0.0,
+            "mean": 0.00280537597
+        },
+        "liveness": {
+            "max": 0.978,
+            "min": 0.015,
+            "mean": 0.18832959999999999
+        }
+    },
+    "reggaeton": {
+        "popularity": {
+            "max": 98,
+            "min": 0,
+            "mean": 23.858
+        },
+        "danceability": {
+            "max": 0.957,
+            "min": 0.475,
+            "mean": 0.758521
+        },
+        "energy": {
+            "max": 0.969,
+            "min": 0.364,
+            "mean": 0.738728
+        },
+        "loudness": {
+            "max": -0.792,
+            "min": -14.476,
+            "mean": -4.987124
+        },
+        "speechiness": {
+            "max": 0.533,
+            "min": 0.0266,
+            "mean": 0.1209521
+        },
+        "acousticness": {
+            "max": 0.829,
+            "min": 0.00175,
+            "mean": 0.16476341000000003
+        },
+        "instrumentalness": {
+            "max": 0.417,
+            "min": 0.0,
+            "mean": 0.0027859232
+        },
+        "liveness": {
+            "max": 0.946,
+            "min": 0.015,
+            "mean": 0.17038530000000002
+        }
+    },
+    "rock": {
+        "popularity": {
+            "max": 96,
+            "min": 0,
+            "mean": 19.001
+        },
+        "danceability": {
+            "max": 0.89,
+            "min": 0.112,
+            "mean": 0.5436089999999999
+        },
+        "energy": {
+            "max": 0.99,
+            "min": 0.0931,
+            "mean": 0.6790711
+        },
+        "loudness": {
+            "max": -1.399,
+            "min": -21.089,
+            "mean": -6.664480999999999
+        },
+        "speechiness": {
+            "max": 0.391,
+            "min": 0.0241,
+            "mean": 0.0499229
+        },
+        "acousticness": {
+            "max": 0.964,
+            "min": 1.03e-05,
+            "mean": 0.2092416611
+        },
+        "instrumentalness": {
+            "max": 0.921,
+            "min": 0.0,
+            "mean": 0.02097829694
+        },
+        "liveness": {
+            "max": 0.958,
+            "min": 0.0179,
+            "mean": 0.17251270000000002
+        }
+    },
+    "rock-n-roll": {
+        "popularity": {
+            "max": 80,
+            "min": 0,
+            "mean": 34.434
+        },
+        "danceability": {
+            "max": 0.875,
+            "min": 0.165,
+            "mean": 0.550302
+        },
+        "energy": {
+            "max": 0.98,
+            "min": 0.0529,
+            "mean": 0.5266152
+        },
+        "loudness": {
+            "max": -0.131,
+            "min": -23.746,
+            "mean": -9.381602999999998
+        },
+        "speechiness": {
+            "max": 0.353,
+            "min": 0.0241,
+            "mean": 0.0513818
+        },
+        "acousticness": {
+            "max": 0.987,
+            "min": 1.05e-05,
+            "mean": 0.5533451770000001
+        },
+        "instrumentalness": {
+            "max": 0.712,
+            "min": 0.0,
+            "mean": 0.014221187790000001
+        },
+        "liveness": {
+            "max": 1.0,
+            "min": 0.0248,
+            "mean": 0.227312
+        }
+    },
+    "rockabilly": {
+        "popularity": {
+            "max": 80,
+            "min": 0,
+            "mean": 31.5
+        },
+        "danceability": {
+            "max": 0.849,
+            "min": 0.158,
+            "mean": 0.561202
+        },
+        "energy": {
+            "max": 0.996,
+            "min": 0.0373,
+            "mean": 0.6593719
+        },
+        "loudness": {
+            "max": -0.131,
+            "min": -21.657,
+            "mean": -8.202449
+        },
+        "speechiness": {
+            "max": 0.43,
+            "min": 0.0232,
+            "mean": 0.0595629
+        },
+        "acousticness": {
+            "max": 0.986,
+            "min": 9.36e-06,
+            "mean": 0.44698917326000004
+        },
+        "instrumentalness": {
+            "max": 0.929,
+            "min": 0.0,
+            "mean": 0.025229327600000004
+        },
+        "liveness": {
+            "max": 0.99,
+            "min": 0.0169,
+            "mean": 0.2289194
+        }
+    },
+    "romance": {
+        "popularity": {
+            "max": 35,
+            "min": 0,
+            "mean": 3.245
+        },
+        "danceability": {
+            "max": 0.826,
+            "min": 0.0,
+            "mean": 0.43213320000000005
+        },
+        "energy": {
+            "max": 0.841,
+            "min": 0.0237,
+            "mean": 0.2943038
+        },
+        "loudness": {
+            "max": -3.003,
+            "min": -28.146,
+            "mean": -13.205726
+        },
+        "speechiness": {
+            "max": 0.685,
+            "min": 0.0,
+            "mean": 0.0648153
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 0.0188,
+            "mean": 0.8694951000000001
+        },
+        "instrumentalness": {
+            "max": 0.812,
+            "min": 0.0,
+            "mean": 0.05377302979
+        },
+        "liveness": {
+            "max": 0.963,
+            "min": 0.0431,
+            "mean": 0.2107734
+        }
+    },
+    "sad": {
+        "popularity": {
+            "max": 83,
+            "min": 0,
+            "mean": 52.379
+        },
+        "danceability": {
+            "max": 0.98,
+            "min": 0.299,
+            "mean": 0.6923779999999999
+        },
+        "energy": {
+            "max": 0.946,
+            "min": 0.0337,
+            "mean": 0.4624701
+        },
+        "loudness": {
+            "max": -2.052,
+            "min": -26.675,
+            "mean": -10.275018
+        },
+        "speechiness": {
+            "max": 0.914,
+            "min": 0.0253,
+            "mean": 0.13043110000000002
+        },
+        "acousticness": {
+            "max": 0.991,
+            "min": 0.000496,
+            "mean": 0.473710126
+        },
+        "instrumentalness": {
+            "max": 0.973,
+            "min": 0.0,
+            "mean": 0.10574007977
+        },
+        "liveness": {
+            "max": 0.919,
+            "min": 0.0415,
+            "mean": 0.17161059999999997
+        }
+    },
+    "salsa": {
+        "popularity": {
+            "max": 77,
+            "min": 0,
+            "mean": 28.066
+        },
+        "danceability": {
+            "max": 0.913,
+            "min": 0.359,
+            "mean": 0.668288
+        },
+        "energy": {
+            "max": 0.975,
+            "min": 0.221,
+            "mean": 0.724518
+        },
+        "loudness": {
+            "max": -0.163,
+            "min": -19.629,
+            "mean": -6.922218999999999
+        },
+        "speechiness": {
+            "max": 0.615,
+            "min": 0.0258,
+            "mean": 0.0561603
+        },
+        "acousticness": {
+            "max": 0.919,
+            "min": 0.00101,
+            "mean": 0.46924546
+        },
+        "instrumentalness": {
+            "max": 0.915,
+            "min": 0.0,
+            "mean": 0.01254381249
+        },
+        "liveness": {
+            "max": 0.989,
+            "min": 0.0166,
+            "mean": 0.1823286
+        }
+    },
+    "samba": {
+        "popularity": {
+            "max": 68,
+            "min": 0,
+            "mean": 38.826
+        },
+        "danceability": {
+            "max": 0.895,
+            "min": 0.261,
+            "mean": 0.5748969999999999
+        },
+        "energy": {
+            "max": 0.998,
+            "min": 0.0263,
+            "mean": 0.6726435000000001
+        },
+        "loudness": {
+            "max": -1.152,
+            "min": -23.937,
+            "mean": -8.490191999999999
+        },
+        "speechiness": {
+            "max": 0.705,
+            "min": 0.023,
+            "mean": 0.0836434
+        },
+        "acousticness": {
+            "max": 0.987,
+            "min": 0.00117,
+            "mean": 0.48990308
+        },
+        "instrumentalness": {
+            "max": 0.942,
+            "min": 0.0,
+            "mean": 0.00735576425
+        },
+        "liveness": {
+            "max": 0.988,
+            "min": 0.0287,
+            "mean": 0.44319240000000004
+        }
+    },
+    "sertanejo": {
+        "popularity": {
+            "max": 63,
+            "min": 0,
+            "mean": 47.866
+        },
+        "danceability": {
+            "max": 0.889,
+            "min": 0.217,
+            "mean": 0.5916469999999999
+        },
+        "energy": {
+            "max": 0.979,
+            "min": 0.167,
+            "mean": 0.7103910000000001
+        },
+        "loudness": {
+            "max": -1.042,
+            "min": -19.178,
+            "mean": -5.4854449999999995
+        },
+        "speechiness": {
+            "max": 0.411,
+            "min": 0.0236,
+            "mean": 0.06486529999999999
+        },
+        "acousticness": {
+            "max": 0.95,
+            "min": 0.00282,
+            "mean": 0.43662081999999997
+        },
+        "instrumentalness": {
+            "max": 0.109,
+            "min": 0.0,
+            "mean": 0.00016029266
+        },
+        "liveness": {
+            "max": 0.991,
+            "min": 0.0319,
+            "mean": 0.47422440000000005
+        }
+    },
+    "show-tunes": {
+        "popularity": {
+            "max": 75,
+            "min": 0,
+            "mean": 31.246
+        },
+        "danceability": {
+            "max": 0.82,
+            "min": 0.0,
+            "mean": 0.46373810000000004
+        },
+        "energy": {
+            "max": 0.953,
+            "min": 0.00896,
+            "mean": 0.39874176
+        },
+        "loudness": {
+            "max": -1.49,
+            "min": -36.905,
+            "mean": -10.682708
+        },
+        "speechiness": {
+            "max": 0.874,
+            "min": 0.0,
+            "mean": 0.108183
+        },
+        "acousticness": {
+            "max": 0.993,
+            "min": 3.25e-05,
+            "mean": 0.6371923265
+        },
+        "instrumentalness": {
+            "max": 0.968,
+            "min": 0.0,
+            "mean": 0.03786859097
+        },
+        "liveness": {
+            "max": 0.969,
+            "min": 0.0283,
+            "mean": 0.21560839999999998
+        }
+    },
+    "singer-songwriter": {
+        "popularity": {
+            "max": 90,
+            "min": 0,
+            "mean": 37.813
+        },
+        "danceability": {
+            "max": 0.877,
+            "min": 0.132,
+            "mean": 0.562022
+        },
+        "energy": {
+            "max": 0.952,
+            "min": 0.0182,
+            "mean": 0.4341884
+        },
+        "loudness": {
+            "max": -2.947,
+            "min": -24.554,
+            "mean": -9.779511
+        },
+        "speechiness": {
+            "max": 0.611,
+            "min": 0.0223,
+            "mean": 0.0514857
+        },
+        "acousticness": {
+            "max": 0.989,
+            "min": 0.000299,
+            "mean": 0.5527535419999999
+        },
+        "instrumentalness": {
+            "max": 0.955,
+            "min": 0.0,
+            "mean": 0.02789156575
+        },
+        "liveness": {
+            "max": 0.917,
+            "min": 0.0362,
+            "mean": 0.15019310000000002
+        }
+    },
+    "ska": {
+        "popularity": {
+            "max": 81,
+            "min": 0,
+            "mean": 35.126
+        },
+        "danceability": {
+            "max": 0.89,
+            "min": 0.108,
+            "mean": 0.580676
+        },
+        "energy": {
+            "max": 0.997,
+            "min": 0.13,
+            "mean": 0.793134
+        },
+        "loudness": {
+            "max": -0.651,
+            "min": -18.492,
+            "mean": -6.352839
+        },
+        "speechiness": {
+            "max": 0.46,
+            "min": 0.0245,
+            "mean": 0.0721267
+        },
+        "acousticness": {
+            "max": 0.911,
+            "min": 2.45e-06,
+            "mean": 0.12157530015
+        },
+        "instrumentalness": {
+            "max": 0.941,
+            "min": 0.0,
+            "mean": 0.03011484573
+        },
+        "liveness": {
+            "max": 0.993,
+            "min": 0.0144,
+            "mean": 0.2714103
+        }
+    },
+    "sleep": {
+        "popularity": {
+            "max": 85,
+            "min": 0,
+            "mean": 35.071
+        },
+        "danceability": {
+            "max": 0.591,
+            "min": 0.0,
+            "mean": 0.16792249999999997
+        },
+        "energy": {
+            "max": 1.0,
+            "min": 0.0,
+            "mean": 0.34207171670000003
+        },
+        "loudness": {
+            "max": -0.689,
+            "min": -49.531,
+            "mean": -24.194084
+        },
+        "speechiness": {
+            "max": 0.528,
+            "min": 0.0,
+            "mean": 0.056847
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 0.0,
+            "mean": 0.6572527010800001
+        },
+        "instrumentalness": {
+            "max": 1.0,
+            "min": 0.0,
+            "mean": 0.72353913501
+        },
+        "liveness": {
+            "max": 0.994,
+            "min": 0.0,
+            "mean": 0.3577362
+        }
+    },
+    "songwriter": {
+        "popularity": {
+            "max": 90,
+            "min": 0,
+            "mean": 37.813
+        },
+        "danceability": {
+            "max": 0.877,
+            "min": 0.132,
+            "mean": 0.5620219999999999
+        },
+        "energy": {
+            "max": 0.952,
+            "min": 0.0182,
+            "mean": 0.4341884
+        },
+        "loudness": {
+            "max": -2.947,
+            "min": -24.554,
+            "mean": -9.779511000000001
+        },
+        "speechiness": {
+            "max": 0.611,
+            "min": 0.0223,
+            "mean": 0.0514857
+        },
+        "acousticness": {
+            "max": 0.989,
+            "min": 0.000299,
+            "mean": 0.5527535419999999
+        },
+        "instrumentalness": {
+            "max": 0.955,
+            "min": 0.0,
+            "mean": 0.027891565750000003
+        },
+        "liveness": {
+            "max": 0.917,
+            "min": 0.0362,
+            "mean": 0.1501931
+        }
+    },
+    "soul": {
+        "popularity": {
+            "max": 88,
+            "min": 0,
+            "mean": 19.795
+        },
+        "danceability": {
+            "max": 0.937,
+            "min": 0.169,
+            "mean": 0.600112
+        },
+        "energy": {
+            "max": 0.962,
+            "min": 0.05,
+            "mean": 0.5338725999999999
+        },
+        "loudness": {
+            "max": -1.741,
+            "min": -20.41,
+            "mean": -8.284505999999999
+        },
+        "speechiness": {
+            "max": 0.458,
+            "min": 0.023,
+            "mean": 0.0600308
+        },
+        "acousticness": {
+            "max": 0.983,
+            "min": 4.86e-05,
+            "mean": 0.4015648954
+        },
+        "instrumentalness": {
+            "max": 0.943,
+            "min": 0.0,
+            "mean": 0.013636269039999998
+        },
+        "liveness": {
+            "max": 0.981,
+            "min": 0.0264,
+            "mean": 0.1819059
+        }
+    },
+    "spanish": {
+        "popularity": {
+            "max": 89,
+            "min": 0,
+            "mean": 37.922
+        },
+        "danceability": {
+            "max": 0.917,
+            "min": 0.122,
+            "mean": 0.6043099999999999
+        },
+        "energy": {
+            "max": 0.997,
+            "min": 0.143,
+            "mean": 0.707777
+        },
+        "loudness": {
+            "max": -1.887,
+            "min": -20.783,
+            "mean": -6.486593999999999
+        },
+        "speechiness": {
+            "max": 0.53,
+            "min": 0.0243,
+            "mean": 0.0873142
+        },
+        "acousticness": {
+            "max": 0.985,
+            "min": 6.62e-06,
+            "mean": 0.26875821868000005
+        },
+        "instrumentalness": {
+            "max": 0.936,
+            "min": 0.0,
+            "mean": 0.01730288238
+        },
+        "liveness": {
+            "max": 0.99,
+            "min": 0.027,
+            "mean": 0.2236962
+        }
+    },
+    "study": {
+        "popularity": {
+            "max": 55,
+            "min": 0,
+            "mean": 26.108
+        },
+        "danceability": {
+            "max": 0.937,
+            "min": 0.331,
+            "mean": 0.68524
+        },
+        "energy": {
+            "max": 0.959,
+            "min": 0.0282,
+            "mean": 0.41065809999999997
+        },
+        "loudness": {
+            "max": -3.343,
+            "min": -25.15,
+            "mean": -10.85278
+        },
+        "speechiness": {
+            "max": 0.743,
+            "min": 0.0256,
+            "mean": 0.1000384
+        },
+        "acousticness": {
+            "max": 0.99,
+            "min": 0.000386,
+            "mean": 0.530638808
+        },
+        "instrumentalness": {
+            "max": 0.975,
+            "min": 1.61e-05,
+            "mean": 0.7897574537000001
+        },
+        "liveness": {
+            "max": 0.918,
+            "min": 0.0354,
+            "mean": 0.1612922
+        }
+    },
+    "swedish": {
+        "popularity": {
+            "max": 83,
+            "min": 0,
+            "mean": 37.175
+        },
+        "danceability": {
+            "max": 0.942,
+            "min": 0.149,
+            "mean": 0.590413
+        },
+        "energy": {
+            "max": 0.992,
+            "min": 0.0288,
+            "mean": 0.6220025
+        },
+        "loudness": {
+            "max": -1.194,
+            "min": -26.765,
+            "mean": -7.776523
+        },
+        "speechiness": {
+            "max": 0.648,
+            "min": 0.0238,
+            "mean": 0.0648112
+        },
+        "acousticness": {
+            "max": 0.992,
+            "min": 8.57e-06,
+            "mean": 0.32420006772
+        },
+        "instrumentalness": {
+            "max": 0.954,
+            "min": 0.0,
+            "mean": 0.022167275049999997
+        },
+        "liveness": {
+            "max": 0.978,
+            "min": 0.0176,
+            "mean": 0.1903963
+        }
+    },
+    "synth-pop": {
+        "popularity": {
+            "max": 87,
+            "min": 0,
+            "mean": 36.576
+        },
+        "danceability": {
+            "max": 0.953,
+            "min": 0.147,
+            "mean": 0.620663
+        },
+        "energy": {
+            "max": 0.996,
+            "min": 0.0909,
+            "mean": 0.7131349
+        },
+        "loudness": {
+            "max": -0.223,
+            "min": -17.48,
+            "mean": -8.204640999999999
+        },
+        "speechiness": {
+            "max": 0.476,
+            "min": 0.0221,
+            "mean": 0.0483371
+        },
+        "acousticness": {
+            "max": 0.966,
+            "min": 3.77e-06,
+            "mean": 0.15232235624999999
+        },
+        "instrumentalness": {
+            "max": 0.977,
+            "min": 0.0,
+            "mean": 0.08232404800000001
+        },
+        "liveness": {
+            "max": 0.982,
+            "min": 0.00986,
+            "mean": 0.18416916
+        }
+    },
+    "tango": {
+        "popularity": {
+            "max": 46,
+            "min": 0,
+            "mean": 19.871
+        },
+        "danceability": {
+            "max": 0.883,
+            "min": 0.147,
+            "mean": 0.537862
+        },
+        "energy": {
+            "max": 0.832,
+            "min": 0.0449,
+            "mean": 0.37282800000000005
+        },
+        "loudness": {
+            "max": -2.97,
+            "min": -27.628,
+            "mean": -10.062361000000001
+        },
+        "speechiness": {
+            "max": 0.573,
+            "min": 0.0228,
+            "mean": 0.07983590000000002
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 0.000935,
+            "mean": 0.8462089349999998
+        },
+        "instrumentalness": {
+            "max": 0.967,
+            "min": 0.0,
+            "mean": 0.13971501043
+        },
+        "liveness": {
+            "max": 0.976,
+            "min": 0.0211,
+            "mean": 0.2303476
+        }
+    },
+    "techno": {
+        "popularity": {
+            "max": 85,
+            "min": 0,
+            "mean": 39.042
+        },
+        "danceability": {
+            "max": 0.952,
+            "min": 0.245,
+            "mean": 0.684348
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.156,
+            "mean": 0.746413
+        },
+        "loudness": {
+            "max": 0.55,
+            "min": -22.772,
+            "mean": -8.077874
+        },
+        "speechiness": {
+            "max": 0.578,
+            "min": 0.0243,
+            "mean": 0.0642115
+        },
+        "acousticness": {
+            "max": 0.857,
+            "min": 8.28e-06,
+            "mean": 0.08141377308
+        },
+        "instrumentalness": {
+            "max": 0.979,
+            "min": 0.0,
+            "mean": 0.5400382181
+        },
+        "liveness": {
+            "max": 0.986,
+            "min": 0.0292,
+            "mean": 0.1594341
+        }
+    },
+    "trance": {
+        "popularity": {
+            "max": 86,
+            "min": 0,
+            "mean": 37.635
+        },
+        "danceability": {
+            "max": 0.899,
+            "min": 0.137,
+            "mean": 0.583409
+        },
+        "energy": {
+            "max": 0.999,
+            "min": 0.406,
+            "mean": 0.8452719999999999
+        },
+        "loudness": {
+            "max": 1.023,
+            "min": -16.545,
+            "mean": -6.3297110000000005
+        },
+        "speechiness": {
+            "max": 0.83,
+            "min": 0.025,
+            "mean": 0.0797055
+        },
+        "acousticness": {
+            "max": 0.532,
+            "min": 1.22e-05,
+            "mean": 0.0358702953
+        },
+        "instrumentalness": {
+            "max": 0.985,
+            "min": 0.0,
+            "mean": 0.42350094276000005
+        },
+        "liveness": {
+            "max": 0.889,
+            "min": 0.0204,
+            "mean": 0.2343574
+        }
+    },
+    "trip-hop": {
+        "popularity": {
+            "max": 71,
+            "min": 0,
+            "mean": 34.46
+        },
+        "danceability": {
+            "max": 0.985,
+            "min": 0.183,
+            "mean": 0.6346949999999999
+        },
+        "energy": {
+            "max": 0.992,
+            "min": 0.12,
+            "mean": 0.6223630000000001
+        },
+        "loudness": {
+            "max": -2.692,
+            "min": -23.405,
+            "mean": -9.239915000000002
+        },
+        "speechiness": {
+            "max": 0.533,
+            "min": 0.0241,
+            "mean": 0.0763031
+        },
+        "acousticness": {
+            "max": 0.989,
+            "min": 6.64e-06,
+            "mean": 0.22561481075
+        },
+        "instrumentalness": {
+            "max": 0.969,
+            "min": 0.0,
+            "mean": 0.38376133847999994
+        },
+        "liveness": {
+            "max": 0.969,
+            "min": 0.0233,
+            "mean": 0.19034210000000001
+        }
+    },
+    "turkish": {
+        "popularity": {
+            "max": 77,
+            "min": 0,
+            "mean": 40.698
+        },
+        "danceability": {
+            "max": 0.966,
+            "min": 0.123,
+            "mean": 0.616077
+        },
+        "energy": {
+            "max": 0.981,
+            "min": 0.028,
+            "mean": 0.6098036
+        },
+        "loudness": {
+            "max": -1.977,
+            "min": -29.729,
+            "mean": -8.224722
+        },
+        "speechiness": {
+            "max": 0.594,
+            "min": 0.0237,
+            "mean": 0.1050867
+        },
+        "acousticness": {
+            "max": 0.993,
+            "min": 3.05e-05,
+            "mean": 0.3211246845
+        },
+        "instrumentalness": {
+            "max": 0.957,
+            "min": 0.0,
+            "mean": 0.0356028508
+        },
+        "liveness": {
+            "max": 0.961,
+            "min": 0.0188,
+            "mean": 0.1807503
+        }
+    },
+    "world-music": {
+        "popularity": {
+            "max": 70,
+            "min": 0,
+            "mean": 41.873
+        },
+        "danceability": {
+            "max": 0.838,
+            "min": 0.0,
+            "mean": 0.414572
+        },
+        "energy": {
+            "max": 0.996,
+            "min": 2.03e-05,
+            "mean": 0.5329867403
+        },
+        "loudness": {
+            "max": -2.757,
+            "min": -43.043,
+            "mean": -9.417547
+        },
+        "speechiness": {
+            "max": 0.763,
+            "min": 0.0,
+            "mean": 0.041768
+        },
+        "acousticness": {
+            "max": 0.996,
+            "min": 7.17e-06,
+            "mean": 0.29954666447
+        },
+        "instrumentalness": {
+            "max": 1.0,
+            "min": 0.0,
+            "mean": 0.09182382283000001
+        },
+        "liveness": {
+            "max": 0.989,
+            "min": 0.0118,
+            "mean": 0.2503926
+        }
+    }
+}

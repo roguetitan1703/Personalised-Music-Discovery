@@ -595,17 +595,7 @@ class SpotifyAPIUtility:
             headers={
                 'Authorization': f'Bearer {access_token}' 
             }, 
-            params={
-                'limit': parameters['limit'],
-                'seed_genres': parameters['seed_genres'],
-                # 'seed_artist': parameters['seed_artist'],
-                # 'seed_tracks': parameters['seed_tracks'],
-                'target_acousticness' : parameters['target_acousticness'],
-                'target_speechiness' : parameters['target_speechiness'],
-                'target_danceability' : parameters['target_danceability'],
-                'target_instrumentalness' : parameters['target_instrumentalness'],
-                'target_energy' : parameters['target_energy']
-            }
+            params=parameters
         )
         
         # If the status_code is 200, means the method was successful

@@ -6,3 +6,6 @@ src/helpers_/__pycache__/
 
 # Data files
 src/data/logs/
+
+# Test files 
+src/Test
