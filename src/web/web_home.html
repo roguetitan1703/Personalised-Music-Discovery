@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Music</title>
+    <link rel="stylesheet" href="web_home.css">
+</head>
+<body>
+    <h1>Discover Music</h1>
+    <header>
+        <div id="header-content">
+            <div class=" container_heading"><h2>Give Your Preferences</h2></div>
+            <div class="container">
+            <div id="genre-selector">            
+                <label for="genre">Select a Genre:</label>
+                <select id="genre">
+                    <option value="Deep-House">Deep-House</option>
+                    <option value="Edm">Edm</option>
+                    <option value="Electronic">Electronic</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="House">House</option>
+                    <option value="Metal-core">Metal-core</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Synth-pop">Synth-pop</option>
+                </select>
+            </div>
+            <br>
+            <div id="range-selectors">
+                <div>
+                    <label for="acousticness">Select Acousticness range:</label>
+                    <input type="range" id="acousticness" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                <div>
+                    <label for="speechiness">Select Speechiness range:</label>
+                    <input type="range" id="speechiness" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                
+                <div>
+                    <label for="danceability">Select Danceability range:</label>
+                    <input type="range" id="danceability" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                <div>
+                    <label for="instrumentalness">Select Instrumentalness range:</label>
+                    <input type="range" id="instrumentalness" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                <div>
+                    <label for="energy">Select Energy range:</label>
+                    <input type="range" id="energy" min="0" max="1" step="0.01" value="0.5">
+                </div>
+            </div>
+            <br>
+            <div>
+                <label for="quantity">No. of Songs: </label>
+                <input type="number" id="quantity" value="0" min="0" max="50" onkeydown="return false">
+            </div>
+              </script>
+            
+            <button id="discover-button">Discover</button>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div id="results"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

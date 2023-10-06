@@ -99,7 +99,7 @@ def get_recommendation_tracks():
             recommendation_parameters['target_energy'] = tweek_target_ranges(genre_choice_var.get().lower(), 'energy', recommendation_parameters['target_energy'])
             
                   
-      # Get the playlist from the get_recommendation_spotify methodg
+      # Get the playlist from the get_recommendation_spotify method
       tracks_array = SpotifyAPIUtility.get_recommendations_spotify(parameters=recommendation_parameters)
       
       # If the tracks array is not empty
