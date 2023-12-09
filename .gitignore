@@ -2,10 +2,10 @@
 .vscode
 
 # Cache files
-src/helpers_/__pycache__/
+/Gui
 
 # Data files
-src/data/logs/
+/data/logs/
 
 # Test files 
-src/Test
+/test

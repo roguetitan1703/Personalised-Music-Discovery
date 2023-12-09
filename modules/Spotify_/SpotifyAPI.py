@@ -12,15 +12,15 @@ import logging, colorlog
 
 # Adding the project's root directory to the path
 project_root = os.getcwd()
-sys.path.append(f'{project_root}/data')
-sys.path.append(f'{project_root}/src')
+sys.path.append(project_root)
+# sys.path.append(f'{project_root}/data')
 
 # Importing local modules
-from helpers_.json_helper import read_file
+from modules.json_helper.json_helper import read_file
 
 # Initialising the paths for data files
-spotify_data_path = f'{project_root}/src/data/Spotify_/'
-log_data_path = f'{project_root}/src/data/logs/'
+spotify_data_path = f'{project_root}/data/Spotify_/'
+log_data_path = f'{project_root}/data/logs/'
 
 # Loading the .env file
 env_file = f'{spotify_data_path}/.env'
@@ -635,7 +635,6 @@ class SpotifyAPIUtility:
             # Return an empty array
             return []
         
-    
     
     # To create a playlist of the recommended songs
     @staticmethod

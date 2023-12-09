@@ -92,5 +92,54 @@
         "playlist_uri": "spotify:playlist:7xyvAHIv2hQKxOBct4AN5B",
         "snapshot_id": "MywyYjljYWEwMjhiZmU1NzM3NDRjMTBiMGVhNzYyNTU2MjZlYzVkYmJj",
         "is_playlist_created": true
+    },
+    {
+        "playlist_id": "0YxPhelnUL2TLfVQTcJWDr",
+        "playlist_url": "https://open.spotify.com/playlist/0YxPhelnUL2TLfVQTcJWDr",
+        "playlist_uri": "spotify:playlist:0YxPhelnUL2TLfVQTcJWDr",
+        "snapshot_id": "MyxiMjEzZTg3ODFjOGNkNTE5ZTNmMmY4YmM3MDQ3Y2YwYWJjMTIzMmI1",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "3PSsMlC175JiJwqXO076ti",
+        "playlist_url": "https://open.spotify.com/playlist/3PSsMlC175JiJwqXO076ti",
+        "playlist_uri": "spotify:playlist:3PSsMlC175JiJwqXO076ti",
+        "snapshot_id": "Myw5ZWZkZDFmNDEyNWI1ZTgwZTE1MGI5MDUxYTJkYzViODY4NTZjNTA3",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "0VHBVnmNvzgt66rho4axg7",
+        "playlist_url": "https://open.spotify.com/playlist/0VHBVnmNvzgt66rho4axg7",
+        "playlist_uri": "spotify:playlist:0VHBVnmNvzgt66rho4axg7",
+        "snapshot_id": "MyxlMDdiNmMyYTAzYjc1YzQyNmEwOTExNzg5MTExMTE2NjhlMjg0MTYy",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "74Yo5GcDWrEUS3mQFP2FCz",
+        "playlist_url": "https://open.spotify.com/playlist/74Yo5GcDWrEUS3mQFP2FCz",
+        "playlist_uri": "spotify:playlist:74Yo5GcDWrEUS3mQFP2FCz",
+        "snapshot_id": "Myw5NDUyODM3Y2I5ODNkMTAwYmNmOGY1NDdkYTA0ZjRkMTdiMjg4NTdi",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "6TGf2i2yzeSindEqIcRxCs",
+        "playlist_url": "https://open.spotify.com/playlist/6TGf2i2yzeSindEqIcRxCs",
+        "playlist_uri": "spotify:playlist:6TGf2i2yzeSindEqIcRxCs",
+        "snapshot_id": "MyxhYzhhM2IyZmMzYWI1MmY0NTE4YjE3MTdmODQxZDZiMmMxMTcxZDFl",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "2JHZvkB4e20ajl5c56REcr",
+        "playlist_url": "https://open.spotify.com/playlist/2JHZvkB4e20ajl5c56REcr",
+        "playlist_uri": "spotify:playlist:2JHZvkB4e20ajl5c56REcr",
+        "snapshot_id": "MyxiNGU2MmQxNTNmZTU2MzUwZWY0Y2ZjYjYxNTQ0YTFjZWM1ZjA0OGVk",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "3PSLZuwV3pMYgs98fL7VDQ",
+        "playlist_url": "https://open.spotify.com/playlist/3PSLZuwV3pMYgs98fL7VDQ",
+        "playlist_uri": "spotify:playlist:3PSLZuwV3pMYgs98fL7VDQ",
+        "snapshot_id": "MyxmZTM3OTI2YTM0NTFhZjdjNWIwOTY3NWNhMTI2YTU5MDdmN2I2MDky",
+        "is_playlist_created": true
     }
 ]

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Music</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+    <script src="../static/js/script.js"></script>
+</head>
+<body>
+    <h1>Discover Music</h1>
+    <header>
+        <div id="header-content">
+            <div class=" container_heading"><h2>Give Your Preferences</h2></div>
+            <div class="container">
+            <div id="genre-selector">            
+                <label for="genre">Select a Genre:</label>
+                <select id="genre">
+                    <option value="deep-house">Deep-House</option>
+                    <option value="edm">Edm</option>
+                    <option value="electronic">Electronic</option>
+                    <option value="hip-hop">Hip-Hop</option>
+                    <option value="house">House</option>
+                    <option value="metalcore">Metal-core</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="synth-pop">Synth-Pop</option>
+                </select>
+            </div>
+            <br>
+            <div id="range-selectors">
+                <div>
+                    <label for="acousticness">Select Acousticness range:</label>
+                    <input type="range" id="acousticness" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                <div>
+                    <label for="speechiness">Select Speechiness range:</label>
+                    <input type="range" id="speechiness" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                
+                <div>
+                    <label for="danceability">Select Danceability range:</label>
+                    <input type="range" id="danceability" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                <div>
+                    <label for="instrumentalness">Select Instrumentalness range:</label>
+                    <input type="range" id="instrumentalness" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                <div>
+                    <label for="energy">Select Energy range:</label>
+                    <input type="range" id="energy" min="0" max="1" step="0.01" value="0.5">
+                </div>
+            </div>
+            <br>
+            <div>
+                <label for="limit">No. of Songs: </label>
+                <input type="number" id="limit" value="0" min="0" max="50" onkeydown="return false">
+            </div>
+              </script>
+            
+            <button type=button id="discover-button">Discover</button>
+        </div>
+    </div>
+    </header>
+    <main>
+      <div id="results">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2JHZvkB4e20ajl5c56REcr?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    </main>
+</body>
+</html>

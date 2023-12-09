@@ -12,7 +12,7 @@ sys.path.append(f'{project_root}/data')
 sys.path.append(f'{project_root}/src')
 
 # Importing local modules
-from helpers_.json_helper import dump_file, convert_numpy_types
+from json_helper.json_helper import dump_file, convert_numpy_types
 
 # Initialising the paths for data files
 spotify_data_path = f'{project_root}/src/data/Spotify_/'

@@ -1,0 +1,9 @@
+webbrowser
+threading
+http.server
+requests
+socketserver
+urllib.parse
+fastapi
+uvicorn
+python-multipart
