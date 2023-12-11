@@ -40,3 +40,25 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// Function to update subcategories based on the selected category
+function updateSubcategories() {
+    const categorySelect = document.getElementById('category');
+    const subCategorySelect = document.getElementById('sub-category');
+    const selectedCategory = categorySelect.value;
+  
+    // Clear existing subcategories
+    subCategorySelect.innerHTML = '';
+  
+    if (selectedCategory !== 'all' && genreData[selectedCategory]) {
+      // Populate subcategories based on the selected category
+      const subcategories = Object.keys(genreData[selectedCategory]);
+      subcategories.forEach(subcategory => {
+        const option = document.createElement('option');
+        option.value = subcategory;
+        option.text = subcategory;
+        subCategorySelect.appendChild(option);
+      });
+    }
+  }
+  

@@ -1,73 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Music</title>
     <link rel="stylesheet" href="../static/css/style.css">
-
+  
     <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
     <script src="../static/js/script.js"></script>
-</head>
-<body>
-    <h1>Discover Music</h1>
+  </head>
+  <body>
+    
     <header>
-        <div id="header-content">
-            <div class=" container_heading"><h2>Give Your Preferences</h2></div>
-            <div class="container">
-            <div id="genre-selector">            
-                <label for="genre">Select a Genre:</label>
-                <select id="genre">
-                    <option value="deep-house">Deep-House</option>
-                    <option value="edm">Edm</option>
-                    <option value="electronic">Electronic</option>
-                    <option value="hip-hop">Hip-Hop</option>
-                    <option value="house">House</option>
-                    <option value="metalcore">Metal-core</option>
-                    <option value="pop">Pop</option>
-                    <option value="rock">Rock</option>
-                    <option value="synth-pop">Synth-Pop</option>
-                </select>
-            </div>
-            <br>
-            <div id="range-selectors">
-                <div>
-                    <label for="acousticness">Select Acousticness range:</label>
-                    <input type="range" id="acousticness" min="0" max="1" step="0.01" value="0.5">
-                </div>
-                <div>
-                    <label for="speechiness">Select Speechiness range:</label>
-                    <input type="range" id="speechiness" min="0" max="1" step="0.01" value="0.5">
-                </div>
-                
-                <div>
-                    <label for="danceability">Select Danceability range:</label>
-                    <input type="range" id="danceability" min="0" max="1" step="0.01" value="0.5">
-                </div>
-                <div>
-                    <label for="instrumentalness">Select Instrumentalness range:</label>
-                    <input type="range" id="instrumentalness" min="0" max="1" step="0.01" value="0.5">
-                </div>
-                <div>
-                    <label for="energy">Select Energy range:</label>
-                    <input type="range" id="energy" min="0" max="1" step="0.01" value="0.5">
-                </div>
-            </div>
-            <br>
-            <div>
-                <label for="limit">No. of Songs: </label>
-                <input type="number" id="limit" value="0" min="0" max="50" onkeydown="return false">
-            </div>
-              </script>
+        <h1>Discover Music</h1>
             
-            <button type=button id="discover-button">Discover</button>
-        </div>
-    </div>
     </header>
-    <main>
-      <div id="results">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2JHZvkB4e20ajl5c56REcr?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
+        <main>
+        <div class="container">
+            <span id="first_box">
+                <div class="container_heading">
+                    <h2>Give Your Preferences</h2>
+                </div>
+                <div class="preferences">
+                    <div id="genre-categories">
+                        <label for="genre">Select a Genre:</label>
+                        <select id="category" onchange="updateSubcategories()">
+                            <option value="All Genres">All Genres</option>
+                            <option value="Uplifting & Energetic">Uplifting & Energetic</option>
+                            <option value="Relaxing & Chill">Relaxing & Chill</option>
+                            <option value="Emotional & Reflective">Emotional & Reflective</option>
+                            <option value="Latin">Latin</option>
+                            <option value="World Music">World Music</option>
+                            <option value="Country & Folk">Country & Folk</option>
+                            <option value="European">European</option>
+                            <option value="Electronic">Electronic</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Pop">Pop</option>
+                            <option value="Hip-Hop">Hip-Hop</option>
+                            <option value="Children">Children</option>
+                            <option value="Holiday">Holiday</option>
+                            <option value="Soundtrack">Soundtrack</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Guitar">Guitar</option>
+                            <option value="Opera">Opera</option>
+                            <option value="Show Tunes">Show Tunes</option>
+                            <option value="Work-Out">Work-Out</option>
+                        </select>
+                        <select id="genre">
+                            <!-- Subcategories will be populated dynamically based on the selected category -->
+                        </select>
+                    </div>
+                    <br>
+                    <div id="range-selectors">
+                        <div>
+                            <label for="acousticness">Select Acousticness range:</label>
+                            <input type="range" id="acousticness" min="0" max="1" step="0.01" value="0.5">
+                        </div>
+                        <div>
+                            <label for="speechiness">Select Speechiness range:</label>
+                            <input type="range" id="speechiness" min="0" max="1" step="0.01" value="0.5">
+                        </div>
+                        <div>
+                            <label for="danceability">Select Danceability range:</label>
+                            <input type="range" id="danceability" min="0" max="1" step="0.01" value="0.5">
+                        </div>
+                        <div>
+                            <label for="instrumentalness">Select Instrumentalness range:</label>
+                            <input type="range" id="instrumentalness" min="0" max="1" step="0.01" value="0.5">
+                        </div>
+                        <div>
+                            <label for="energy">Select Energy range:</label>
+                            <input type="range" id="energy" min="0" max="1" step="0.01" value="0.5">
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="limit">No. of Songs: </label>
+                        <input type="number" id="limit" value="0" min="0" max="50" onkeydown="return false">
+                    </div>
+                    <button type="button" id="discover-button">Discover</button>
+                </div>
+                    <br>
+            </span>   
+            <div class="music_player"  id="results">
+            </div>
+            
+        </div>
     </main>
-</body>
-</html>
+    <script>
+        // Function to fetch JSON data from a file
+        async function fetchGenreData() {
+            try {
+                const response = await fetch('../data/Spotify_/genre_cats.json'); // Update the path accordingly
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error fetching genre data:', error);
+                return {}; // Return an empty object in case of an error
+            }
+        }
+
+        // Function to update subcategories based on the selected category
+        async function updateSubcategories() {
+            const categorySelect = document.getElementById('category');
+            const subCategorySelect = document.getElementById('genre');
+            const selectedCategory = categorySelect.value;
+
+            // Clear existing subcategories
+            subCategorySelect.innerHTML = '';
+
+            if (selectedCategory !== 'all') {
+                // Fetch genre data from the JSON file
+                const genreData = await fetchGenreData();
+
+                // Populate subcategories based on the selected category
+                const subcategories = genreData[selectedCategory] || [];
+                subcategories.forEach(subcategory => {
+                    const option = document.createElement('option');
+                    option.value = subcategory;
+                    option.text = subcategory;
+                    subCategorySelect.appendChild(option);
+                });
+            }
+        }
+
+        // Initial call to populate subcategories
+        updateSubcategories();
+    </script>
+  </body>
+  </html>

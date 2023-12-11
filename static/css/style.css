@@ -1,29 +1,60 @@
 body {
     font-family: Helvetica, sans-serif;
+    background-image: url(../img/back.jpg);
     background-color: #f2f2f2;
     margin: 0;
     padding: 10px 20px;
-    /* display: flex; */
     justify-content: right;
     align-items: left;
     min-height: 100vh;
 }
 
+#first_box{
+    width: 50%;
+    height: 80%;
+    display: block;
+}
+.preferences{
+    /* width: 40%; */
+    height: 58vh;
+    text-align: right;
+    border: 2px solid white;
+    background-color: rgba(128, 128, 128, 0.76);
+    border-radius: 17px;
+    margin-right: 10px;
+    padding-right: 60px;
+    padding-top: 10px;
+    
+}
+
+.music_player{
+    width: 80%;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 10px;
+    border: 2px solid white;
+    border-radius: 14px;
+}
 .container {
-    width: 450px;
-    padding: 20px;
-    background-color: #fff;
+    height: 65vh;
+    padding: 10px;
+    /* background-color: white; */
     border-radius: 7px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+
 
 h1 {
     height: 60px;
     font-size: 50px;
     font-weight: 540;
+    margin-top: 10px;
     color: #fffcfc;
-    background-color: #248847;
+    background-color: #3f6d4f94;
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -33,11 +64,12 @@ h2{
 }
 
 .container_heading{
-    width: 490px;
+    /* width: 40rem;  */
     height: 40px;
     margin-bottom: 15px;
+    margin-right: 5px;
     padding: 0px;
-    background-color: #fff;
+    background-color: #eeff5696;
     border-radius: 7px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
@@ -45,12 +77,20 @@ h2{
 .filter label {
     display: block;
     margin-top: 10px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
+label{
+    font-size: 1.1rem;
+    font-weight: 550;
+}
 select, input[type="range"], input[type="number"] {
     width: 49%;
-    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 
@@ -60,8 +100,10 @@ button {
     padding: 5px 5px;
     background-color: #ffffff;
     color: black;
+    font-weight: 600;
+    font-size: medium;
     border: 2px solid gray;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     display: block;
     margin-left: auto;
@@ -84,3 +126,4 @@ input[type="number"] {
     margin-top: 20px;
     text-align: left;
 }
+

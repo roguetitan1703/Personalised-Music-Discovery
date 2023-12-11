@@ -141,5 +141,47 @@
         "playlist_uri": "spotify:playlist:3PSLZuwV3pMYgs98fL7VDQ",
         "snapshot_id": "MyxmZTM3OTI2YTM0NTFhZjdjNWIwOTY3NWNhMTI2YTU5MDdmN2I2MDky",
         "is_playlist_created": true
+    },
+    {
+        "playlist_id": "6xrAqfbEjAXLLLhzx96kFQ",
+        "playlist_url": "https://open.spotify.com/playlist/6xrAqfbEjAXLLLhzx96kFQ",
+        "playlist_uri": "spotify:playlist:6xrAqfbEjAXLLLhzx96kFQ",
+        "snapshot_id": "MyxlZDg5MDJlOTc3NjgzM2NkZDEyMmMxYTk3NjU1Zjk5ZDQzMmQwNTZm",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "4S69VGWzTASwFgSoPDYXmZ",
+        "playlist_url": "https://open.spotify.com/playlist/4S69VGWzTASwFgSoPDYXmZ",
+        "playlist_uri": "spotify:playlist:4S69VGWzTASwFgSoPDYXmZ",
+        "snapshot_id": "MywyOTg2MjJhYjlkN2RiNzQ5MmI4MzZhMzg5ZDQzMWYwZDkzNTFhNjUz",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "242HF47uPkgEZDw6eyqBC7",
+        "playlist_url": "https://open.spotify.com/playlist/242HF47uPkgEZDw6eyqBC7",
+        "playlist_uri": "spotify:playlist:242HF47uPkgEZDw6eyqBC7",
+        "snapshot_id": "MywyY2UyNWM4ZDM2NDgzMTQwMjk2M2I3NWYzNzk1MWU1OWYyMTFkNmU3",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "79AEeLMyG1p5KOHl5Pntlz",
+        "playlist_url": "https://open.spotify.com/playlist/79AEeLMyG1p5KOHl5Pntlz",
+        "playlist_uri": "spotify:playlist:79AEeLMyG1p5KOHl5Pntlz",
+        "snapshot_id": "MyxhYmM1NDY4OWZkMzkzNmMyZmYyZDMzZTExZjIzYjk5NzIwZjQxN2Nk",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "3tgjnJkGc546bTMhNlonVo",
+        "playlist_url": "https://open.spotify.com/playlist/3tgjnJkGc546bTMhNlonVo",
+        "playlist_uri": "spotify:playlist:3tgjnJkGc546bTMhNlonVo",
+        "snapshot_id": "MywzMmNkOGY5MWQxODJhMTAwMTE0YmFiY2NlNWUyOTNiNDQyYmNjNmYy",
+        "is_playlist_created": true
+    },
+    {
+        "playlist_id": "0mGdtAulZpODPShEbucTAI",
+        "playlist_url": "https://open.spotify.com/playlist/0mGdtAulZpODPShEbucTAI",
+        "playlist_uri": "spotify:playlist:0mGdtAulZpODPShEbucTAI",
+        "snapshot_id": "MywxN2NlN2IxYTg0NzU0NzdlN2M1ZjFmMDk0NjIyYzE0NzQ0ZGNhM2Qw",
+        "is_playlist_created": true
     }
 ]

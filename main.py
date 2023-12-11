@@ -12,8 +12,12 @@ from modules.playlist.PlaylistUtility import make_recommendation_playlist,embedd
 app = FastAPI()
 
 # Mount static files and configure templates
-app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Mount the 'data' directory at the '/data' path
+app.mount("/data", StaticFiles(directory="data"), name="data")
 
 
 @app.get("/index", response_class=HTMLResponse)
@@ -30,3 +34,8 @@ async def discover_music(request: Request, recommendation_params: dict):
         embedd_html = embedd_playlist(playlist['playlist_id'])
         print(embedd_html)
         return HTMLResponse(content=embedd_html, media_type='text/html')
+    
+@app.get("/test", response_class=HTMLResponse)
+async def test(request: Request):
+    return templates.TemplateResponse("test.html", {"request": request})    
+    
