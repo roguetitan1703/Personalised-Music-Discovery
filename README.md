@@ -46,6 +46,16 @@ Throughout the development process, we encountered challenges and gained valuabl
 
 - **Data Cleaning:** Conducting data cleaning and utilizing cleaned data for analysis provided insights into data preprocessing techniques and the importance of data quality for accurate analysis.
 
+## Libraries and Frameworks Used
+
+- **FastAPI**: Used as the backend web framework for handling API requests.
+- **Flask**: Used for connecting the backend to simple HTML, CSS, and JavaScript for the frontend.
+- **uvicorn**: Used for running the backend server.
+- **pandas**: Used for data manipulation and analysis, particularly for cleaning the dataset.
+- **numpy**: Used for numerical computing and handling arrays.
+- **matplotlib**: Used for data visualization and plotting graphs.
+- **Jinja2**: Used as the template engine for Flask to render HTML templates.
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
